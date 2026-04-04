@@ -1,0 +1,75 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'catalog/tools.json'
+      - 'docs/**'
+      - 'scripts/generate_docs.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sync API data
+        run: |
+          cp catalog/tools.json docs/api/tools.json
+          python3 -c "
+          import json
+          from collections import defaultdict
+          d = json.load(open('catalog/tools.json'))
+          tools = d['tools']
+          CAT_NAMES = {
+              'mcp-server': 'MCP 服务器', 'skill': 'Claude Code Skills',
+              'ai-agent': 'AI 智能体/框架', 'cli-tool': '命令行工具',
+              'browser-tool': '浏览器/网页工具', 'voice-tool': '语音工具',
+              'finance': '金融投资工具', 'productivity': '效率/生产力工具',
+              'dev-tool': '开发辅助工具', 'openclaw-skill': 'OpenClaw Skills',
+          }
+          groups = defaultdict(list)
+          for t in tools:
+              groups[t['category']].append({
+                  'id': t['id'], 'name': t['name'],
+                  'stars': t.get('stars', 0),
+                  'security_rating': t.get('security_rating', 'unreviewed'),
+                  'github_url': t.get('github_url', ''),
+              })
+          cats = []
+          for cat, ct in sorted(groups.items(), key=lambda x: -len(x[1])):
+              ct.sort(key=lambda t: -(t.get('stars') or 0))
+              cats.append({'id': cat, 'name': CAT_NAMES.get(cat, cat), 'count': len(ct), 'tools': ct})
+          with open('docs/api/categories.json', 'w', encoding='utf-8') as f:
+              json.dump({'total_tools': len(tools), 'total_categories': len(cats), 'categories': cats}, f, ensure_ascii=False, indent=2)
+          "
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

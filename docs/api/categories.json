@@ -1,0 +1,818 @@
+{
+  "total_tools": 106,
+  "total_categories": 10,
+  "categories": [
+    {
+      "id": "skill",
+      "name": "Claude Code Skills",
+      "count": 24,
+      "tools": [
+        {
+          "id": "superpowers",
+          "name": "Superpowers",
+          "stars": 126817,
+          "security_rating": "caution",
+          "github_url": "https://github.com/obra/superpowers"
+        },
+        {
+          "id": "ui-ux-pro-max",
+          "name": "UI UX Pro Max",
+          "stars": 55485,
+          "security_rating": "caution",
+          "github_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+        },
+        {
+          "id": "claude-mem",
+          "name": "claude-mem",
+          "stars": 45009,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/thedotmack/claude-mem"
+        },
+        {
+          "id": "antigravity-awesome-skills",
+          "name": "Antigravity Awesome Skills",
+          "stars": 30445,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/sickn33/antigravity-awesome-skills"
+        },
+        {
+          "id": "superclaude-framework",
+          "name": "SuperClaude Framework",
+          "stars": 22142,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework"
+        },
+        {
+          "id": "planning-with-files",
+          "name": "Planning with Files",
+          "stars": 17989,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/OthmanAdi/planning-with-files"
+        },
+        {
+          "id": "claude-hud",
+          "name": "claude-hud",
+          "stars": 16665,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/jarrodwatts/claude-hud"
+        },
+        {
+          "id": "last30days-skill",
+          "name": "Last 30 Days Skill",
+          "stars": 16636,
+          "security_rating": "caution",
+          "github_url": "https://github.com/mvanhorn/last30days-skill"
+        },
+        {
+          "id": "awesome-claude-code-subagents",
+          "name": "Awesome Claude Code Subagents",
+          "stars": 16186,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/VoltAgent/awesome-claude-code-subagents"
+        },
+        {
+          "id": "claude-plugins-official",
+          "name": "Claude Plugins Official",
+          "stars": 15941,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/anthropics/claude-plugins-official"
+        },
+        {
+          "id": "context-engineering-intro",
+          "name": "Context Engineering Intro",
+          "stars": 13058,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/coleam00/context-engineering-intro"
+        },
+        {
+          "id": "humanizer-blader",
+          "name": "Humanizer (blader)",
+          "stars": 12274,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/blader/humanizer"
+        },
+        {
+          "id": "awesome-claude-skills",
+          "name": "Awesome Claude Skills",
+          "stars": 10493,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/travisvn/awesome-claude-skills"
+        },
+        {
+          "id": "mini-max-skills",
+          "name": "MiniMax Skills",
+          "stars": 8186,
+          "security_rating": "danger",
+          "github_url": "https://github.com/MiniMax-AI/skills"
+        },
+        {
+          "id": "claude-code-game-studios",
+          "name": "Claude Code Game Studios",
+          "stars": 7576,
+          "security_rating": "caution",
+          "github_url": "https://github.com/Donchitos/Claude-Code-Game-Studios"
+        },
+        {
+          "id": "refly",
+          "name": "Refly",
+          "stars": 7172,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/refly-ai/refly"
+        },
+        {
+          "id": "slavingia-skills",
+          "name": "Slavingia Skills",
+          "stars": 6361,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/slavingia/skills"
+        },
+        {
+          "id": "trailofbits-skills",
+          "name": "Trail of Bits Skills",
+          "stars": 4274,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/trailofbits/skills"
+        },
+        {
+          "id": "claude-seo",
+          "name": "Claude SEO",
+          "stars": 3932,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/AgriciDaniel/claude-seo"
+        },
+        {
+          "id": "autoresearch",
+          "name": "AutoResearch",
+          "stars": 2880,
+          "security_rating": "caution",
+          "github_url": "https://github.com/uditgoenka/autoresearch"
+        },
+        {
+          "id": "apify-agent-skills",
+          "name": "Apify Agent Skills",
+          "stars": 1793,
+          "security_rating": "verified",
+          "github_url": "https://github.com/apify/agent-skills"
+        },
+        {
+          "id": "elite-longterm-memory",
+          "name": "Elite Long-term Memory",
+          "stars": 9,
+          "security_rating": "caution",
+          "github_url": "https://github.com/NextFrontierBuilds/elite-longterm-memory"
+        },
+        {
+          "id": "capability-evolver",
+          "name": "CapabilityEvolver",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "auto-updater",
+          "name": "Auto Updater",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        }
+      ]
+    },
+    {
+      "id": "mcp-server",
+      "name": "MCP 服务器",
+      "count": 18,
+      "tools": [
+        {
+          "id": "firecrawl",
+          "name": "Firecrawl",
+          "stars": 101604,
+          "security_rating": "caution",
+          "github_url": "https://github.com/mendableai/firecrawl"
+        },
+        {
+          "id": "mcp-servers-official",
+          "name": "MCP Reference Servers",
+          "stars": 82939,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/modelcontextprotocol/servers"
+        },
+        {
+          "id": "context7",
+          "name": "Context7",
+          "stars": 51582,
+          "security_rating": "verified",
+          "github_url": "https://github.com/upstash/context7"
+        },
+        {
+          "id": "chrome-devtools-mcp",
+          "name": "Chrome DevTools MCP",
+          "stars": 33095,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+        },
+        {
+          "id": "playwright-mcp",
+          "name": "Playwright MCP",
+          "stars": 30035,
+          "security_rating": "caution",
+          "github_url": "https://github.com/microsoft/playwright-mcp"
+        },
+        {
+          "id": "github-mcp-server",
+          "name": "GitHub MCP Server",
+          "stars": 28539,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/github/github-mcp-server"
+        },
+        {
+          "id": "composio",
+          "name": "Composio",
+          "stars": 27588,
+          "security_rating": "caution",
+          "github_url": "https://github.com/ComposioHQ/composio"
+        },
+        {
+          "id": "claude-task-master",
+          "name": "Claude Task Master",
+          "stars": 26394,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/eyaltoledano/claude-task-master"
+        },
+        {
+          "id": "graphiti",
+          "name": "Graphiti",
+          "stars": 24484,
+          "security_rating": "verified",
+          "github_url": "https://github.com/getzep/graphiti"
+        },
+        {
+          "id": "fastmcp",
+          "name": "FastMCP",
+          "stars": 24273,
+          "security_rating": "verified",
+          "github_url": "https://github.com/PrefectHQ/fastmcp"
+        },
+        {
+          "id": "blender-mcp",
+          "name": "Blender MCP",
+          "stars": 18359,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/ahujasid/blender-mcp"
+        },
+        {
+          "id": "cognee",
+          "name": "Cognee",
+          "stars": 14911,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/topoteretes/cognee"
+        },
+        {
+          "id": "figma-context-mcp",
+          "name": "Figma Context MCP",
+          "stars": 14143,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/GLips/Figma-Context-MCP"
+        },
+        {
+          "id": "jina-reader",
+          "name": "Jina Reader",
+          "stars": 10442,
+          "security_rating": "caution",
+          "github_url": "https://github.com/jina-ai/reader"
+        },
+        {
+          "id": "firecrawl-mcp",
+          "name": "Firecrawl MCP Server",
+          "stars": 5911,
+          "security_rating": "caution",
+          "github_url": "https://github.com/mendableai/firecrawl-mcp-server"
+        },
+        {
+          "id": "tavily",
+          "name": "Tavily Web Search",
+          "stars": 1605,
+          "security_rating": "caution",
+          "github_url": "https://github.com/tavily-ai/tavily-mcp"
+        },
+        {
+          "id": "apify-mcp-server",
+          "name": "Apify MCP Server",
+          "stars": 985,
+          "security_rating": "danger",
+          "github_url": "https://github.com/apify/apify-mcp-server"
+        },
+        {
+          "id": "lark-openapi-mcp",
+          "name": "Lark OpenAPI MCP",
+          "stars": 622,
+          "security_rating": "caution",
+          "github_url": "https://github.com/larksuite/lark-openapi-mcp"
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "金融投资工具",
+      "count": 17,
+      "tools": [
+        {
+          "id": "tradingagents-tauric",
+          "name": "TradingAgents (TauricResearch)",
+          "stars": 44840,
+          "security_rating": "verified",
+          "github_url": "https://github.com/TauricResearch/TradingAgents"
+        },
+        {
+          "id": "trading-agents",
+          "name": "Agents",
+          "stars": 32620,
+          "security_rating": "verified",
+          "github_url": "https://github.com/wshobson/agents"
+        },
+        {
+          "id": "alert-system",
+          "name": "Alert System",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "backtest-engine",
+          "name": "Backtest Engine",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "china-stock-analysis",
+          "name": "China Stock Analysis",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "crypto-analysis",
+          "name": "Crypto Analysis",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "data-analysis",
+          "name": "Data Analysis",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "data-visualization",
+          "name": "Data Visualization",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "finnhub-pro",
+          "name": "Finnhub Pro",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "tushare-finance",
+          "name": "Tushare Finance",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "us-stock-analysis",
+          "name": "US Stock Analysis",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "us-value-investing",
+          "name": "US Value Investing Framework",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "quant-factor-screener",
+          "name": "Quant Factor Screener",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "stock-portfolio-manager",
+          "name": "Stock Portfolio Manager",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "trading-coach",
+          "name": "Trading Coach",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "news-aggregator",
+          "name": "News Aggregator",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "risk-management",
+          "name": "Risk Management",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        }
+      ]
+    },
+    {
+      "id": "dev-tool",
+      "name": "开发辅助工具",
+      "count": 16,
+      "tools": [
+        {
+          "id": "openclaw",
+          "name": "OpenClaw",
+          "stars": 342424,
+          "security_rating": "caution",
+          "github_url": "https://github.com/openclaw/openclaw"
+        },
+        {
+          "id": "everything-claude-code",
+          "name": "Everything Claude Code",
+          "stars": 122023,
+          "security_rating": "verified",
+          "github_url": "https://github.com/affaan-m/everything-claude-code"
+        },
+        {
+          "id": "git-shit-done",
+          "name": "Get Shit Done",
+          "stars": 45601,
+          "security_rating": "verified",
+          "github_url": "https://github.com/gsd-build/get-shit-done"
+        },
+        {
+          "id": "awesome-openclaw-skills",
+          "name": "Awesome OpenClaw Skills",
+          "stars": 43310,
+          "security_rating": "caution",
+          "github_url": "https://github.com/VoltAgent/awesome-openclaw-skills"
+        },
+        {
+          "id": "awesome-claude-code",
+          "name": "Awesome Claude Code",
+          "stars": 34745,
+          "security_rating": "caution",
+          "github_url": "https://github.com/hesreallyhim/awesome-claude-code"
+        },
+        {
+          "id": "qwencode",
+          "name": "QwenCode",
+          "stars": 21390,
+          "security_rating": "caution",
+          "github_url": "https://github.com/QwenLM/qwen-code"
+        },
+        {
+          "id": "oh-my-claude-code",
+          "name": "Oh My Claude Code",
+          "stars": 17923,
+          "security_rating": "caution",
+          "github_url": "https://github.com/Yeachan-Heo/oh-my-claudecode"
+        },
+        {
+          "id": "clawhub",
+          "name": "ClawHub",
+          "stars": 7217,
+          "security_rating": "verified",
+          "github_url": "https://github.com/openclaw/clawhub"
+        },
+        {
+          "id": "skill-security-auditor",
+          "name": "Skill Security Auditor",
+          "stars": 3628,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/openclaw/skills"
+        },
+        {
+          "id": "clawith",
+          "name": "Clawith (OpenClaw for Teams)",
+          "stars": 2636,
+          "security_rating": "danger",
+          "github_url": "https://github.com/dataelement/Clawith"
+        },
+        {
+          "id": "snyk-agent-scan",
+          "name": "Snyk Agent Scan",
+          "stars": 2032,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/snyk/agent-scan"
+        },
+        {
+          "id": "clawsec",
+          "name": "ClawSec",
+          "stars": 862,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/prompt-security/clawsec"
+        },
+        {
+          "id": "openclaw-security-monitor",
+          "name": "OpenClaw Security Monitor",
+          "stars": 29,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/adibirzu/openclaw-security-monitor"
+        },
+        {
+          "id": "clawsecure",
+          "name": "ClawSecure",
+          "stars": 20,
+          "security_rating": "trusted",
+          "github_url": "https://github.com/ClawSecure/clawsecure-openclaw-security"
+        },
+        {
+          "id": "healthcheck",
+          "name": "Healthcheck",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "bitdefender-ai-skills-checker",
+          "name": "Bitdefender AI Skills Checker",
+          "stars": 0,
+          "security_rating": "trusted",
+          "github_url": ""
+        }
+      ]
+    },
+    {
+      "id": "openclaw-skill",
+      "name": "OpenClaw Skills",
+      "count": 8,
+      "tools": [
+        {
+          "id": "podcast-reader",
+          "name": "Podcast Reader",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "github-to-skills",
+          "name": "GitHub to Skills",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "skill-manager",
+          "name": "Skill Manager",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "skill-evolution-manager",
+          "name": "Skill Evolution Manager",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "mcp-builder",
+          "name": "MCP Builder",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "pptx-skill",
+          "name": "PPTX Skill",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "video-transcribe",
+          "name": "Video Transcribe",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "json-canvas",
+          "name": "JSON Canvas",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        }
+      ]
+    },
+    {
+      "id": "cli-tool",
+      "name": "命令行工具",
+      "count": 7,
+      "tools": [
+        {
+          "id": "cli-anything",
+          "name": "CLI-Anything",
+          "stars": 25426,
+          "security_rating": "verified",
+          "github_url": "https://github.com/HKUDS/CLI-Anything"
+        },
+        {
+          "id": "gws-cli",
+          "name": "Google Workspace CLI (gws)",
+          "stars": 23271,
+          "security_rating": "caution",
+          "github_url": "https://github.com/googleworkspace/cli"
+        },
+        {
+          "id": "rtk",
+          "name": "RTK",
+          "stars": 15890,
+          "security_rating": "caution",
+          "github_url": "https://github.com/rtk-ai/rtk"
+        },
+        {
+          "id": "ccusage",
+          "name": "ccusage",
+          "stars": 12357,
+          "security_rating": "unreviewed",
+          "github_url": "https://github.com/ryoppippi/ccusage"
+        },
+        {
+          "id": "cmux",
+          "name": "cmux",
+          "stars": 11774,
+          "security_rating": "caution",
+          "github_url": "https://github.com/manaflow-ai/cmux"
+        },
+        {
+          "id": "deskclaw",
+          "name": "ClawX (DeskClaw)",
+          "stars": 5906,
+          "security_rating": "danger",
+          "github_url": "https://github.com/ValueCell-ai/ClawX"
+        },
+        {
+          "id": "lark-cli",
+          "name": "Lark CLI",
+          "stars": 5172,
+          "security_rating": "caution",
+          "github_url": "https://github.com/larksuite/cli"
+        }
+      ]
+    },
+    {
+      "id": "ai-agent",
+      "name": "AI 智能体/框架",
+      "count": 6,
+      "tools": [
+        {
+          "id": "agency-agents",
+          "name": "Agency Agents",
+          "stars": 66916,
+          "security_rating": "caution",
+          "github_url": "https://github.com/msitarzewski/agency-agents"
+        },
+        {
+          "id": "deerflow",
+          "name": "DeerFlow",
+          "stars": 54678,
+          "security_rating": "caution",
+          "github_url": "https://github.com/bytedance/deer-flow"
+        },
+        {
+          "id": "moneyprinterturbo",
+          "name": "MoneyPrinterTurbo",
+          "stars": 54281,
+          "security_rating": "danger",
+          "github_url": "https://github.com/harry0703/MoneyPrinterTurbo"
+        },
+        {
+          "id": "mirofish",
+          "name": "MiroFish",
+          "stars": 46567,
+          "security_rating": "verified",
+          "github_url": "https://github.com/666ghj/MiroFish"
+        },
+        {
+          "id": "moneyprinterv2",
+          "name": "MoneyPrinterV2",
+          "stars": 27561,
+          "security_rating": "verified",
+          "github_url": "https://github.com/FujiwaraChoki/MoneyPrinterV2"
+        },
+        {
+          "id": "project-nomad",
+          "name": "Project Nomad",
+          "stars": 20422,
+          "security_rating": "caution",
+          "github_url": "https://github.com/Crosstalk-Solutions/project-nomad"
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "name": "效率/生产力工具",
+      "count": 6,
+      "tools": [
+        {
+          "id": "humanizer-zh",
+          "name": "Humanizer",
+          "stars": 33,
+          "security_rating": "caution",
+          "github_url": "https://github.com/brandonwise/humanizer"
+        },
+        {
+          "id": "token-optimizer",
+          "name": "Token Optimizer",
+          "stars": 8,
+          "security_rating": "caution",
+          "github_url": "https://github.com/openclaw-token-optimizer/openclaw-token-optimizer"
+        },
+        {
+          "id": "free-ride",
+          "name": "Free Ride",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "feishu-doc",
+          "name": "Feishu Doc",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "feishu-drive",
+          "name": "Feishu Drive",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        },
+        {
+          "id": "feishu-wiki",
+          "name": "Feishu Wiki",
+          "stars": 0,
+          "security_rating": "danger",
+          "github_url": ""
+        }
+      ]
+    },
+    {
+      "id": "browser-tool",
+      "name": "浏览器/网页工具",
+      "count": 2,
+      "tools": [
+        {
+          "id": "carbonyl",
+          "name": "Carbonyl",
+          "stars": 17544,
+          "security_rating": "caution",
+          "github_url": "https://github.com/fathyb/carbonyl"
+        },
+        {
+          "id": "web-access",
+          "name": "Web Access",
+          "stars": 3040,
+          "security_rating": "caution",
+          "github_url": "https://github.com/eze-is/web-access"
+        }
+      ]
+    },
+    {
+      "id": "voice-tool",
+      "name": "语音工具",
+      "count": 2,
+      "tools": [
+        {
+          "id": "vibevoice",
+          "name": "VibeVoice",
+          "stars": 31924,
+          "security_rating": "verified",
+          "github_url": "https://github.com/microsoft/VibeVoice"
+        },
+        {
+          "id": "qwenvoice",
+          "name": "Qwen3-TTS",
+          "stars": 10155,
+          "security_rating": "verified",
+          "github_url": "https://github.com/QwenLM/Qwen3-TTS"
+        }
+      ]
+    }
+  ]
+}

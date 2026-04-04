@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Toolkit - 工具目录 API</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 2rem; color: #f0f6fc; margin-bottom: 8px; }
+    .subtitle { color: #8b949e; font-size: 1.1rem; margin-bottom: 32px; }
+    .stats { display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; }
+    .stat { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px 24px; }
+    .stat-num { font-size: 1.8rem; font-weight: 700; color: #58a6ff; }
+    .stat-label { font-size: 0.85rem; color: #8b949e; }
+    h2 { font-size: 1.3rem; color: #f0f6fc; margin: 32px 0 16px; }
+    .endpoint { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin-bottom: 12px; }
+    .endpoint-url { font-family: monospace; font-size: 0.95rem; color: #7ee787; word-break: break-all; }
+    .endpoint-desc { color: #8b949e; margin-top: 6px; font-size: 0.9rem; }
+    code { background: #1c2128; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; color: #e6edf3; }
+    pre { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; overflow-x: auto; margin: 12px 0; font-size: 0.85rem; color: #e6edf3; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+    .badge-get { background: #1f6feb33; color: #58a6ff; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #30363d; color: #484f58; font-size: 0.85rem; }
+    .search-box { width: 100%; padding: 12px 16px; background: #0d1117; border: 1px solid #30363d; border-radius: 8px; color: #c9d1d9; font-size: 1rem; margin-bottom: 16px; outline: none; }
+    .search-box:focus { border-color: #58a6ff; }
+    .tool-grid { display: grid; gap: 8px; }
+    .tool-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; }
+    .tool-name { font-weight: 600; color: #f0f6fc; }
+    .tool-cat { font-size: 0.8rem; color: #8b949e; }
+    .tool-stars { color: #e3b341; font-size: 0.85rem; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Toolkit</h1>
+    <p class="subtitle">Claude Code Skills / MCP Servers / AI Agent 工具目录</p>
+
+    <div class="stats" id="stats"></div>
+
+    <h2>API Endpoints</h2>
+
+    <div class="endpoint">
+      <span class="badge badge-get">GET</span>
+      <span class="endpoint-url">/api/tools.json</span>
+      <div class="endpoint-desc">完整工具目录（含 meta 和所有工具数据）</div>
+    </div>
+
+    <div class="endpoint">
+      <span class="badge badge-get">GET</span>
+      <span class="endpoint-url">/api/categories.json</span>
+      <div class="endpoint-desc">按分类聚合的索引（分类名、数量、工具列表）</div>
+    </div>
+
+    <h2>Quick Start</h2>
+    <pre>
+# 获取完整工具目录
+curl https://mwpgxl.github.io/ai-toolkit/api/tools.json
+
+# 用 jq 筛选 MCP 服务器
+curl -s https://mwpgxl.github.io/ai-toolkit/api/tools.json \
+  | jq '.tools[] | select(.category=="mcp-server") | {name, stars, description}'
+
+# 用 jq 按 Star 数排序前 10
+curl -s https://mwpgxl.github.io/ai-toolkit/api/tools.json \
+  | jq '[.tools[] | {name, stars, category}] | sort_by(-.stars)[:10]'</pre>
+
+    <h2>Claude Code Skill</h2>
+    <p style="margin-bottom: 12px;">安装 Skill 后，直接对 Claude 说"推荐一个 MCP"或"有什么 SEO 工具"即可查询：</p>
+    <pre>
+# 安装
+git clone https://github.com/mwpgxl/ai-toolkit.git ~/.claude/skills/ai-toolkit</pre>
+
+    <h2 style="margin-top: 32px;">Browse Tools</h2>
+    <input type="text" class="search-box" id="search" placeholder="搜索工具名称、描述或标签...">
+    <div class="tool-grid" id="tools"></div>
+
+    <div class="footer">
+      <p>Source: <a href="https://github.com/mwpgxl/ai-toolkit">github.com/mwpgxl/ai-toolkit</a></p>
+    </div>
+  </div>
+
+  <script>
+    const API = './api/tools.json';
+    let allTools = [];
+
+    fetch(API).then(r => r.json()).then(data => {
+      allTools = data.tools;
+      const cats = [...new Set(allTools.map(t => t.category))];
+      document.getElementById('stats').innerHTML =
+        `<div class="stat"><div class="stat-num">${allTools.length}</div><div class="stat-label">Tools</div></div>` +
+        `<div class="stat"><div class="stat-num">${cats.length}</div><div class="stat-label">Categories</div></div>` +
+        `<div class="stat"><div class="stat-num">${allTools.filter(t=>t.github_url).length}</div><div class="stat-label">Open Source</div></div>`;
+      renderTools(allTools);
+    });
+
+    const CAT_NAMES = {
+      'mcp-server':'MCP','skill':'Skill','ai-agent':'Agent','cli-tool':'CLI',
+      'browser-tool':'Browser','voice-tool':'Voice','finance':'Finance',
+      'productivity':'Productivity','dev-tool':'DevTool','openclaw-skill':'OpenClaw'
+    };
+
+    function renderTools(tools) {
+      const sorted = [...tools].sort((a,b) => (b.stars||0) - (a.stars||0));
+      document.getElementById('tools').innerHTML = sorted.map(t => {
+        const stars = t.stars >= 1000 ? (t.stars/1000).toFixed(1)+'k' : (t.stars || '-');
+        const name = t.github_url ? `<a href="${t.github_url}" target="_blank">${t.name}</a>` : t.name;
+        return `<div class="tool-card">
+          <div><span class="tool-name">${name}</span> <span class="tool-cat">${CAT_NAMES[t.category]||t.category}</span>
+          <br><span style="font-size:0.85rem;color:#8b949e">${(t.description||'').slice(0,60)}</span></div>
+          <div class="tool-stars">${stars} ★</div></div>`;
+      }).join('');
+    }
+
+    document.getElementById('search').addEventListener('input', e => {
+      const q = e.target.value.toLowerCase();
+      if (!q) return renderTools(allTools);
+      renderTools(allTools.filter(t =>
+        t.name.toLowerCase().includes(q) ||
+        (t.description||'').toLowerCase().includes(q) ||
+        (t.tags||[]).some(tag => tag.includes(q)) ||
+        (t.category||'').includes(q)
+      ));
+    });
+  </script>
+</body>
+</html>
