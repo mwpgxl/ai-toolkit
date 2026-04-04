@@ -3,7 +3,7 @@
     "name": "AI Toolkit 工具目录",
     "version": "1.1.0",
     "last_updated": "2026-03-31T09:08:11.458469+00:00",
-    "total_tools": 81,
+    "total_tools": 106,
     "last_verified": "2026-03-31",
     "description": "Claude Code Skills、MCP Servers、AI Agent 工具和 ClawHub 技能的综合目录",
     "last_security_audit": "2026-03-31 07:59 UTC",
@@ -2921,6 +2921,423 @@
         "仓库健康": 25,
         "代码安全": 30
       }
+    },
+    {
+      "id": "claude-mem",
+      "name": "claude-mem",
+      "description": "Claude Code 自动记忆插件，AI 压缩会话历史并注入未来上下文",
+      "description_en": "Plugin that auto-captures everything Claude does, compresses with AI, and injects into future sessions",
+      "category": "skill",
+      "github_url": "https://github.com/thedotmack/claude-mem",
+      "stars": 45009,
+      "tags": [
+        "memory",
+        "persistence",
+        "context",
+        "plugin"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "antigravity-awesome-skills",
+      "name": "Antigravity Awesome Skills",
+      "description": "1,340+ 可安装 Agent Skills 库，含 CLI 安装器和 bundles",
+      "description_en": "Installable library of 1,340+ agentic skills with installer CLI and bundles",
+      "category": "skill",
+      "github_url": "https://github.com/sickn33/antigravity-awesome-skills",
+      "stars": 30445,
+      "tags": [
+        "skills",
+        "collection",
+        "installer",
+        "awesome-list"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "superclaude-framework",
+      "name": "SuperClaude Framework",
+      "description": "Claude Code 增强框架：专用命令、认知 persona、开发方法论",
+      "description_en": "Configuration framework with specialized commands, cognitive personas, and development methodologies",
+      "category": "skill",
+      "github_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+      "stars": 22142,
+      "tags": [
+        "framework",
+        "enhancement",
+        "methodology",
+        "persona"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "planning-with-files",
+      "name": "Planning with Files",
+      "description": "Manus 风格持久化 Markdown 规划 Skill",
+      "description_en": "Manus-style persistent markdown planning skill",
+      "category": "skill",
+      "github_url": "https://github.com/OthmanAdi/planning-with-files",
+      "stars": 17989,
+      "tags": [
+        "planning",
+        "workflow",
+        "markdown",
+        "persistence"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "claude-hud",
+      "name": "claude-hud",
+      "description": "Claude Code 实时 HUD：上下文用量、工具状态、Agent 进度、TODO 追踪",
+      "description_en": "Plugin showing context usage, active tools, running agents, and todo progress",
+      "category": "skill",
+      "github_url": "https://github.com/jarrodwatts/claude-hud",
+      "stars": 16665,
+      "tags": [
+        "monitoring",
+        "dashboard",
+        "context",
+        "plugin"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "awesome-claude-code-subagents",
+      "name": "Awesome Claude Code Subagents",
+      "description": "100+ 专业 Claude Code 子 Agent 合集",
+      "description_en": "A collection of 100+ specialized Claude Code subagents",
+      "category": "skill",
+      "github_url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "stars": 16186,
+      "tags": [
+        "subagent",
+        "collection",
+        "awesome-list"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "claude-plugins-official",
+      "name": "Claude Plugins Official",
+      "description": "Anthropic 官方管理的高质量 Claude Code 插件目录",
+      "description_en": "Official, Anthropic-managed directory of high quality Claude Code Plugins",
+      "category": "skill",
+      "github_url": "https://github.com/anthropics/claude-plugins-official",
+      "stars": 15941,
+      "tags": [
+        "official",
+        "plugins",
+        "directory",
+        "anthropic"
+      ],
+      "security_rating": "trusted",
+      "priority": "essential"
+    },
+    {
+      "id": "context-engineering-intro",
+      "name": "Context Engineering Intro",
+      "description": "上下文工程实战指南，以 Claude Code 为中心",
+      "description_en": "Context engineering guide centered on Claude Code",
+      "category": "skill",
+      "github_url": "https://github.com/coleam00/context-engineering-intro",
+      "stars": 13058,
+      "tags": [
+        "context-engineering",
+        "guide",
+        "best-practices"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "humanizer-blader",
+      "name": "Humanizer (blader)",
+      "description": "消除 AI 写作痕迹的 Skill，社区最高星版本",
+      "description_en": "Claude Code skill that removes signs of AI-generated writing from text",
+      "category": "skill",
+      "github_url": "https://github.com/blader/humanizer",
+      "stars": 12274,
+      "tags": [
+        "writing",
+        "humanize",
+        "content"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "normal"
+    },
+    {
+      "id": "ccusage",
+      "name": "ccusage",
+      "description": "Claude Code / Codex CLI 本地用量分析工具",
+      "description_en": "CLI tool for analyzing Claude Code/Codex CLI usage from local JSONL files",
+      "category": "cli-tool",
+      "github_url": "https://github.com/ryoppippi/ccusage",
+      "stars": 12357,
+      "tags": [
+        "usage",
+        "analytics",
+        "cost",
+        "cli"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "awesome-claude-skills",
+      "name": "Awesome Claude Skills",
+      "description": "精选 Claude Skills 和工具列表",
+      "description_en": "A curated list of awesome Claude Skills, resources, and tools",
+      "category": "skill",
+      "github_url": "https://github.com/travisvn/awesome-claude-skills",
+      "stars": 10493,
+      "tags": [
+        "awesome-list",
+        "skills",
+        "reference"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "normal"
+    },
+    {
+      "id": "refly",
+      "name": "Refly",
+      "description": "开源 Agent Skills Builder，定义工作流并在多平台运行",
+      "description_en": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex and more",
+      "category": "skill",
+      "github_url": "https://github.com/refly-ai/refly",
+      "stars": 7172,
+      "tags": [
+        "builder",
+        "workflow",
+        "cross-platform"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "normal"
+    },
+    {
+      "id": "slavingia-skills",
+      "name": "Slavingia Skills",
+      "description": "Gumroad 创始人 Sahil Lavingia 的创业方法论 Skills",
+      "description_en": "Claude Code skills based on The Minimalist Entrepreneur by Sahil Lavingia",
+      "category": "skill",
+      "github_url": "https://github.com/slavingia/skills",
+      "stars": 6361,
+      "tags": [
+        "entrepreneur",
+        "business",
+        "methodology"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "normal"
+    },
+    {
+      "id": "trailofbits-skills",
+      "name": "Trail of Bits Skills",
+      "description": "安全行业顶级团队 Trail of Bits 出品的安全审计 Skills",
+      "description_en": "Security research, vulnerability detection, and audit workflow skills by Trail of Bits",
+      "category": "skill",
+      "github_url": "https://github.com/trailofbits/skills",
+      "stars": 4274,
+      "tags": [
+        "security",
+        "audit",
+        "vulnerability",
+        "research"
+      ],
+      "security_rating": "trusted",
+      "priority": "recommended"
+    },
+    {
+      "id": "claude-seo",
+      "name": "Claude SEO",
+      "description": "通用 SEO Skill：19 子技能 + 12 子 Agent + 3 扩展，覆盖技术 SEO、E-E-A-T、GEO/AEO",
+      "description_en": "Universal SEO skill with 19 sub-skills, 12 subagents, 3 extensions covering technical SEO, E-E-A-T, schema, GEO/AEO",
+      "category": "skill",
+      "github_url": "https://github.com/AgriciDaniel/claude-seo",
+      "stars": 3932,
+      "tags": [
+        "seo",
+        "marketing",
+        "content",
+        "analytics"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "mcp-servers-official",
+      "name": "MCP Reference Servers",
+      "description": "Anthropic 官方 MCP 参考实现，含 filesystem、memory、fetch、Postgres、Slack 等",
+      "description_en": "Official Anthropic reference MCP servers including filesystem, memory, fetch, Postgres, Slack and more",
+      "category": "mcp-server",
+      "github_url": "https://github.com/modelcontextprotocol/servers",
+      "stars": 82939,
+      "tags": [
+        "official",
+        "reference",
+        "anthropic",
+        "essential"
+      ],
+      "security_rating": "trusted",
+      "priority": "essential"
+    },
+    {
+      "id": "context7",
+      "name": "Context7",
+      "description": "为 LLM 提供最新版本文档和代码示例的 MCP 服务器",
+      "description_en": "Up-to-date code documentation for LLMs and AI code editors",
+      "category": "mcp-server",
+      "github_url": "https://github.com/upstash/context7",
+      "stars": 51582,
+      "tags": [
+        "documentation",
+        "context",
+        "code-examples"
+      ],
+      "security_rating": "verified",
+      "priority": "essential"
+    },
+    {
+      "id": "chrome-devtools-mcp",
+      "name": "Chrome DevTools MCP",
+      "description": "Google 官方 Chrome DevTools MCP 服务器，AI 编码智能体的浏览器调试工具",
+      "description_en": "Chrome DevTools for coding agents",
+      "category": "mcp-server",
+      "github_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "stars": 33095,
+      "tags": [
+        "chrome",
+        "devtools",
+        "browser",
+        "google",
+        "debugging"
+      ],
+      "security_rating": "trusted",
+      "priority": "essential"
+    },
+    {
+      "id": "github-mcp-server",
+      "name": "GitHub MCP Server",
+      "description": "GitHub 官方 MCP 服务器，操作仓库、Issue、PR、代码搜索",
+      "description_en": "GitHub's official MCP Server",
+      "category": "mcp-server",
+      "github_url": "https://github.com/github/github-mcp-server",
+      "stars": 28539,
+      "tags": [
+        "github",
+        "official",
+        "git",
+        "code-search"
+      ],
+      "security_rating": "trusted",
+      "priority": "essential"
+    },
+    {
+      "id": "claude-task-master",
+      "name": "Claude Task Master",
+      "description": "AI 驱动的任务管理 MCP，支持 Cursor、Windsurf 等多个 AI IDE",
+      "description_en": "AI-powered task management system for Cursor, Lovable, Windsurf, Roo, and others",
+      "category": "mcp-server",
+      "github_url": "https://github.com/eyaltoledano/claude-task-master",
+      "stars": 26394,
+      "tags": [
+        "task-management",
+        "project",
+        "workflow"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
+    },
+    {
+      "id": "graphiti",
+      "name": "Graphiti",
+      "description": "实时知识图谱框架 + MCP 服务器，为 AI Agent 构建记忆",
+      "description_en": "Build Real-Time Knowledge Graphs for AI Agents",
+      "category": "mcp-server",
+      "github_url": "https://github.com/getzep/graphiti",
+      "stars": 24484,
+      "tags": [
+        "knowledge-graph",
+        "memory",
+        "neo4j",
+        "agent"
+      ],
+      "security_rating": "verified",
+      "priority": "recommended"
+    },
+    {
+      "id": "fastmcp",
+      "name": "FastMCP",
+      "description": "快速构建 MCP 服务器和客户端的 Python 框架",
+      "description_en": "The fast, Pythonic way to build MCP servers and clients",
+      "category": "mcp-server",
+      "github_url": "https://github.com/PrefectHQ/fastmcp",
+      "stars": 24273,
+      "tags": [
+        "framework",
+        "python",
+        "builder"
+      ],
+      "security_rating": "verified",
+      "priority": "recommended"
+    },
+    {
+      "id": "blender-mcp",
+      "name": "Blender MCP",
+      "description": "连接 Blender 到 AI 编码智能体，支持 prompt 辅助 3D 建模",
+      "description_en": "Connects Blender to Claude for prompt-assisted 3D modeling",
+      "category": "mcp-server",
+      "github_url": "https://github.com/ahujasid/blender-mcp",
+      "stars": 18359,
+      "tags": [
+        "blender",
+        "3d",
+        "modeling",
+        "creative"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "normal"
+    },
+    {
+      "id": "cognee",
+      "name": "Cognee",
+      "description": "AI Agent 记忆知识引擎，6 行代码接入知识图谱",
+      "description_en": "Knowledge Engine for AI Agent Memory in 6 lines of code",
+      "category": "mcp-server",
+      "github_url": "https://github.com/topoteretes/cognee",
+      "stars": 14911,
+      "tags": [
+        "knowledge-engine",
+        "memory",
+        "agent",
+        "graph"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "normal"
+    },
+    {
+      "id": "figma-context-mcp",
+      "name": "Figma Context MCP",
+      "description": "将 Figma 设计稿布局信息提供给 AI 编码智能体",
+      "description_en": "MCP server to provide Figma layout information to AI coding agents",
+      "category": "mcp-server",
+      "github_url": "https://github.com/GLips/Figma-Context-MCP",
+      "stars": 14143,
+      "tags": [
+        "figma",
+        "design",
+        "ui",
+        "frontend"
+      ],
+      "security_rating": "unreviewed",
+      "priority": "recommended"
     }
   ]
 }
