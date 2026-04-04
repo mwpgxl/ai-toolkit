@@ -1,0 +1,75 @@
+name: 自动更新工具目录
+
+on:
+  schedule:
+    # 每周一早上 9 点 (UTC+8) 自动运行
+    - cron: '0 1 * * 1'
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  update-stars:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          set -e
+          pip install -r scripts/requirements.txt
+
+      - name: Update GitHub Stars
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          python scripts/update_stars.py
+
+      - name: Generate docs
+        run: |
+          set -e
+          python scripts/generate_docs.py
+
+      - name: Commit changes
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: 自动更新工具目录 Star 数据 $(date +%Y-%m-%d)"
+          git push
+
+      # 工作流失败时自动创建 Issue 通知
+      - name: Create issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `⚠️ 工具目录自动更新失败 - ${new Date().toISOString().slice(0, 10)}`;
+            const body = [
+              '## 工作流执行失败',
+              '',
+              `**工作流:** ${context.workflow}`,
+              `**运行 ID:** ${context.runId}`,
+              `**触发方式:** ${context.eventName}`,
+              `**时间:** ${new Date().toISOString()}`,
+              '',
+              `**详情:** ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              '',
+              '请检查日志并修复问题。'
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['bug', 'automation']
+            });

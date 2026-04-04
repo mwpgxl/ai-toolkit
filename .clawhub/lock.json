@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "feishu-doc": {
+      "version": "1.2.7",
+      "installedAt": 1775024651068
+    },
+    "feishu-drive": {
+      "version": "1.0.0",
+      "installedAt": 1775024656964
+    },
+    "feishu-wiki": {
+      "version": "1.0.0",
+      "installedAt": 1775024701464
+    }
+  }
+}

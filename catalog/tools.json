@@ -1,0 +1,2926 @@
+{
+  "meta": {
+    "name": "AI Toolkit 工具目录",
+    "version": "1.1.0",
+    "last_updated": "2026-03-31T09:08:11.458469+00:00",
+    "total_tools": 81,
+    "last_verified": "2026-03-31",
+    "description": "Claude Code Skills、MCP Servers、AI Agent 工具和 ClawHub 技能的综合目录",
+    "last_security_audit": "2026-03-31 07:59 UTC",
+    "security_audit_mode": "deep"
+  },
+  "tools": [
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "description": "专为 LLM 设计的网页抓取和爬虫工具，可将网页转为干净的 Markdown",
+      "description_en": "Turn entire websites into LLM-ready markdown",
+      "category": "mcp-server",
+      "github_url": "https://github.com/mendableai/firecrawl",
+      "stars": 101604,
+      "forks": 6732,
+      "tags": [
+        "scraping",
+        "crawler",
+        "llm",
+        "markdown",
+        "essential"
+      ],
+      "use_cases": [
+        "网页抓取",
+        "数据提取",
+        "内容转换"
+      ],
+      "install_cmd": "",
+      "usage": "提供 MCP Server 接入 Claude Code，支持网页抓取、截图、内容提取等",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 67,
+      "platform": "both",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:05:39Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 20,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "composio",
+      "name": "Composio",
+      "description": "AI 智能体工具集成平台，提供 250+ 应用的工具接口",
+      "description_en": "Production-ready toolset for AI agents",
+      "category": "mcp-server",
+      "github_url": "https://github.com/ComposioHQ/composio",
+      "stars": 27588,
+      "forks": 4498,
+      "tags": [
+        "integration",
+        "tools",
+        "agent",
+        "api",
+        "essential"
+      ],
+      "use_cases": [
+        "工具集成",
+        "API 连接",
+        "自动化工作流"
+      ],
+      "install_cmd": "",
+      "usage": "通过 MCP 或 SDK 接入，提供 GitHub、Slack、Gmail 等 250+ 应用的集成",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 65,
+      "platform": "both",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:03:32Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "tavily",
+      "name": "Tavily Web Search",
+      "description": "AI 智能体专用搜索引擎，专门为 LLM 设计，过滤广告和干扰信息",
+      "description_en": "AI-optimized search API for LLMs",
+      "category": "mcp-server",
+      "github_url": "https://github.com/tavily-ai/tavily-mcp",
+      "stars": 1605,
+      "forks": 226,
+      "tags": [
+        "search",
+        "web",
+        "llm",
+        "api",
+        "essential"
+      ],
+      "use_cases": [
+        "网页搜索",
+        "信息检索",
+        "实时数据获取"
+      ],
+      "install_cmd": "",
+      "usage": "配置 API Key 后通过 MCP Server 接入 Claude Code，提供高质量搜索结果",
+      "priority": "essential",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 69,
+      "platform": "both",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T05:17:54Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 12,
+        "仓库健康": 22,
+        "代码安全": 10
+      }
+    },
+    {
+      "id": "playwright-mcp",
+      "name": "Playwright MCP",
+      "description": "微软官方 Playwright MCP 服务器，为 LLM 提供浏览器自动化能力",
+      "description_en": "Playwright-based browser automation MCP server",
+      "category": "mcp-server",
+      "github_url": "https://github.com/microsoft/playwright-mcp",
+      "stars": 30035,
+      "forks": 2421,
+      "tags": [
+        "browser",
+        "automation",
+        "testing",
+        "scraping",
+        "essential"
+      ],
+      "use_cases": [
+        "浏览器自动化",
+        "网页测试",
+        "截图",
+        "表单填写"
+      ],
+      "install_cmd": "",
+      "usage": "作为 MCP Server 接入 Claude Code，实现浏览器自动化操作",
+      "priority": "essential",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 70,
+      "platform": "both",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:54:40Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 5
+      }
+    },
+    {
+      "id": "apify-mcp-server",
+      "name": "Apify MCP Server",
+      "description": "Apify 平台的 MCP 服务器，提供 3000+ 现成的网页抓取和自动化 Actor",
+      "description_en": "MCP server for Apify platform with 3000+ ready-made actors",
+      "category": "mcp-server",
+      "github_url": "https://github.com/apify/apify-mcp-server",
+      "stars": 985,
+      "forks": 134,
+      "tags": [
+        "scraping",
+        "automation",
+        "actor",
+        "api"
+      ],
+      "use_cases": [
+        "网页抓取",
+        "数据采集",
+        "自动化流程"
+      ],
+      "install_cmd": "",
+      "usage": "通过 MCP 接入 Claude Code，可调用 Apify 平台上的各种 Actor",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "danger",
+      "security_score": 54,
+      "platform": "both",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T06:19:11Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 7,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "apify-agent-skills",
+      "name": "Apify Agent Skills",
+      "description": "Apify 为 AI Agent 提供的技能包，包含搜索、抓取等能力",
+      "description_en": "Skills for AI agents powered by Apify actors",
+      "category": "skill",
+      "github_url": "https://github.com/apify/agent-skills",
+      "stars": 1793,
+      "forks": 187,
+      "tags": [
+        "agent",
+        "skills",
+        "scraping",
+        "search"
+      ],
+      "use_cases": [
+        "智能体增强",
+        "网页交互",
+        "数据采集"
+      ],
+      "install_cmd": "",
+      "usage": "为 Claude Code 等 AI Agent 提供预制的网页交互技能",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 85,
+      "platform": "both",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:09:00Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 12,
+        "仓库健康": 18,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "carbonyl",
+      "name": "Carbonyl",
+      "description": "在终端中运行 Chromium 浏览器，支持 CSS、图片、视频等",
+      "description_en": "Chromium running inside your terminal",
+      "category": "browser-tool",
+      "github_url": "https://github.com/fathyb/carbonyl",
+      "stars": 17544,
+      "forks": 420,
+      "tags": [
+        "browser",
+        "terminal",
+        "chromium"
+      ],
+      "use_cases": [
+        "终端浏览网页",
+        "无 GUI 环境浏览"
+      ],
+      "install_cmd": "",
+      "usage": "在终端环境中启动完整的 Chromium 浏览器",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 62,
+      "platform": "standalone",
+      "github_language": "Rust",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:42:07Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 14,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "moneyprinterturbo",
+      "name": "MoneyPrinterTurbo",
+      "description": "一键生成短视频，自动提取素材、合成配音和字幕",
+      "description_en": "One-click generation of short videos with AI",
+      "category": "ai-agent",
+      "github_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": 54281,
+      "forks": 7653,
+      "tags": [
+        "video",
+        "content",
+        "automation",
+        "media"
+      ],
+      "use_cases": [
+        "短视频生成",
+        "内容创作",
+        "自动化视频制作"
+      ],
+      "install_cmd": "",
+      "usage": "提供话题即可自动生成短视频，包含素材、配音、字幕",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "danger",
+      "security_score": 54,
+      "platform": "standalone",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:59:40Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 20,
+        "仓库健康": 19,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "deerflow",
+      "name": "DeerFlow 2.0",
+      "description": "字节跳动开源的 SuperAgent 框架，支持沙箱、记忆、工具、技能和子智能体，处理分钟到小时级任务",
+      "description_en": "Deep Research Framework by ByteDance",
+      "category": "ai-agent",
+      "github_url": "https://github.com/bytedance/deer-flow",
+      "stars": 54678,
+      "forks": 6594,
+      "tags": [
+        "research",
+        "workflow",
+        "search",
+        "agent"
+      ],
+      "use_cases": [
+        "深度研究",
+        "自动报告生成",
+        "信息汇总"
+      ],
+      "install_cmd": "",
+      "usage": "输入研究主题，自动进行多轮搜索、分析并生成完整研究报告",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 67,
+      "platform": "standalone",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:07:11Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 20,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "everything-claude-code",
+      "name": "Everything Claude Code",
+      "description": "Claude Code 性能优化系统，涵盖技能、本能、记忆、安全等",
+      "description_en": "Awesome list for Claude Code resources and tips",
+      "category": "dev-tool",
+      "github_url": "https://github.com/affaan-m/everything-claude-code",
+      "stars": 122023,
+      "forks": 15881,
+      "tags": [
+        "claude-code",
+        "awesome-list",
+        "reference",
+        "essential"
+      ],
+      "use_cases": [
+        "学习参考",
+        "资源索引",
+        "最佳实践"
+      ],
+      "install_cmd": "",
+      "usage": "作为 Claude Code 的学习和参考资源库",
+      "priority": "essential",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 82,
+      "platform": "claude-code",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:07:02Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 20,
+        "仓库健康": 22,
+        "代码安全": 25
+      }
+    },
+    {
+      "id": "cli-anything",
+      "name": "CLI-Anything",
+      "description": "让所有软件变成 Agent 原生，通过 CLI 使任何应用可被 AI 控制",
+      "description_en": "Turn any CLI tool into a Claude Code callable interface",
+      "category": "cli-tool",
+      "github_url": "https://github.com/HKUDS/CLI-Anything",
+      "stars": 25426,
+      "forks": 2274,
+      "tags": [
+        "cli",
+        "integration",
+        "automation"
+      ],
+      "use_cases": [
+        "CLI 工具集成",
+        "命令行自动化"
+      ],
+      "install_cmd": "",
+      "usage": "将现有 CLI 工具包装为 Claude Code 可直接调用的技能",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 85,
+      "platform": "both",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:05:17Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "autoresearch",
+      "name": "AutoResearch",
+      "description": "自主目标导向迭代技能，灵感来自 Karpathy 的 autoresearch",
+      "description_en": "Automated research skill for Claude Code",
+      "category": "skill",
+      "github_url": "https://github.com/uditgoenka/autoresearch",
+      "stars": 2880,
+      "forks": 208,
+      "tags": [
+        "research",
+        "search",
+        "automation",
+        "analysis"
+      ],
+      "use_cases": [
+        "自动研究",
+        "信息汇总",
+        "竞品分析"
+      ],
+      "install_cmd": "",
+      "usage": "让 Claude Code 自主进行多步骤的深度研究",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 64,
+      "platform": "claude-code",
+      "github_language": "Shell",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:00:41Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 12,
+        "仓库健康": 22,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI UX Pro Max",
+      "description": "UI/UX 设计智能体技能，支持生成布局、改进界面、设计系统 Token、组件规范",
+      "description_en": "Professional UI/UX design skill for Claude Code",
+      "category": "skill",
+      "github_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "stars": 55485,
+      "forks": 5393,
+      "tags": [
+        "frontend",
+        "ui",
+        "design",
+        "css"
+      ],
+      "use_cases": [
+        "界面设计",
+        "前端开发",
+        "UI 组件生成"
+      ],
+      "install_cmd": "clawhub install ui-ux-pro-max",
+      "usage": "在 Claude Code 中生成高质量的 UI/UX 设计和前端代码",
+      "priority": "recommended",
+      "source": "user-list",
+      "clawhub_url": "https://clawhub.ai/skills/ui-ux-pro-max",
+      "clawhub_downloads": 20200,
+      "security_rating": "caution",
+      "security_score": 70,
+      "platform": "both",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:07:13Z",
+      "security_dimensions": {
+        "来源信任": 18,
+        "社区信任": 20,
+        "仓库健康": 22,
+        "代码安全": 10
+      }
+    },
+    {
+      "id": "deskclaw",
+      "name": "ClawX (DeskClaw)",
+      "description": "OpenClaw 桌面版 GUI，将 CLI 智能体编排转为桌面体验",
+      "description_en": "Desktop enhancement tool for Claude Code",
+      "category": "cli-tool",
+      "github_url": "https://github.com/ValueCell-ai/ClawX",
+      "stars": 5906,
+      "forks": 806,
+      "tags": [
+        "desktop",
+        "gui",
+        "enhancement"
+      ],
+      "use_cases": [
+        "桌面版增强",
+        "图形界面"
+      ],
+      "install_cmd": "",
+      "usage": "提供 Claude Code 的桌面增强功能",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "danger",
+      "security_score": 49,
+      "platform": "openclaw",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:52:21Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 12,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "web-access",
+      "name": "Web Access",
+      "description": "Claude Code 完整联网技能：三层通道调度 + 浏览器 CDP + 并行分治",
+      "description_en": "Web access capability for Claude Code",
+      "category": "browser-tool",
+      "github_url": "https://github.com/eze-is/web-access",
+      "stars": 3040,
+      "forks": 210,
+      "tags": [
+        "browser",
+        "web",
+        "access"
+      ],
+      "use_cases": [
+        "网页访问",
+        "在线内容获取"
+      ],
+      "install_cmd": "",
+      "usage": "让 Claude Code 能够直接访问和交互网页内容",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 75,
+      "platform": "claude-code",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:06:41Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 12,
+        "仓库健康": 18,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "capability-evolver",
+      "name": "CapabilityEvolver",
+      "description": "AI 自我进化引擎，分析运行历史自动改进，ClawHub 下载量最高的技能。⚠️ 曾被发现向飞书传输数据",
+      "description_en": "AI capability evolution plugin - gets smarter with use",
+      "category": "skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "self-improvement",
+        "evolution",
+        "learning",
+        "essential"
+      ],
+      "use_cases": [
+        "能力进化",
+        "持续学习",
+        "行为优化"
+      ],
+      "install_cmd": "clawhub install capability-evolver",
+      "usage": "安装后 Claude Code 越用越聪明，自动学习和优化工作方式",
+      "priority": "essential",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/autogame-17/capability-evolver",
+      "clawhub_downloads": 35581,
+      "security_rating": "danger",
+      "security_score": 5,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 0,
+        "社区信任": 0,
+        "仓库健康": 0,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "trading-agents",
+      "name": "Trading Agents",
+      "description": "112 个专业 AI 智能体 + 146 个技能 + 79 个工具的综合系统",
+      "description_en": "AI-powered trading agents for stocks and crypto",
+      "category": "finance",
+      "github_url": "https://github.com/wshobson/agents",
+      "stars": 32620,
+      "forks": 3553,
+      "tags": [
+        "trading",
+        "finance",
+        "stock",
+        "crypto",
+        "agent"
+      ],
+      "use_cases": [
+        "交易分析",
+        "投资决策",
+        "市场监控"
+      ],
+      "install_cmd": "",
+      "usage": "提供 AI 驱动的交易信号分析和投资建议",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 85,
+      "platform": "both",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:47:12Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "token-optimizer",
+      "name": "Token Optimizer",
+      "description": "OpenClaw Token 优化器，支持 Prompt 缓存和动态工具加载，降低 API 成本最高 90%",
+      "description_en": "Optimize token usage for Claude Code",
+      "category": "productivity",
+      "github_url": "https://github.com/openclaw-token-optimizer/openclaw-token-optimizer",
+      "stars": 8,
+      "forks": 1,
+      "tags": [
+        "optimization",
+        "token",
+        "cost",
+        "productivity"
+      ],
+      "use_cases": [
+        "Token 优化",
+        "成本控制"
+      ],
+      "install_cmd": "clawhub install openclaw-token-optimizer",
+      "usage": "分析并优化 Claude Code 的 Token 使用，降低使用成本",
+      "priority": "recommended",
+      "source": "user-list",
+      "clawhub_url": "https://clawhub.ai/Asif2BD/openclaw-token-optimizer",
+      "security_rating": "caution",
+      "security_score": 66,
+      "platform": "both",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-14T23:35:06Z",
+      "security_dimensions": {
+        "来源信任": 18,
+        "社区信任": 3,
+        "仓库健康": 15,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "elite-longterm-memory",
+      "name": "Elite Long-term Memory",
+      "description": "终极 AI 记忆系统：WAL 协议 + 向量搜索 + git-notes + 云备份",
+      "description_en": "Elite long-term memory system for Claude Code",
+      "category": "skill",
+      "github_url": "https://github.com/NextFrontierBuilds/elite-longterm-memory",
+      "stars": 9,
+      "forks": 2,
+      "tags": [
+        "memory",
+        "persistence",
+        "context",
+        "essential"
+      ],
+      "use_cases": [
+        "长期记忆",
+        "跨会话记忆",
+        "知识累积"
+      ],
+      "install_cmd": "",
+      "usage": "增强 Claude Code 的记忆能力，跨会话保持上下文和用户偏好",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 59,
+      "platform": "both",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-28T13:38:14Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 3,
+        "仓库健康": 11,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "cmux",
+      "name": "cmux",
+      "description": "基于 Ghostty 的 macOS 终端，支持 AI 编程智能体的垂直标签和通知",
+      "description_en": "Terminal multiplexer tool for Claude Code",
+      "category": "cli-tool",
+      "github_url": "https://github.com/manaflow-ai/cmux",
+      "stars": 11774,
+      "forks": 811,
+      "tags": [
+        "terminal",
+        "multiplexer",
+        "cli"
+      ],
+      "use_cases": [
+        "终端管理",
+        "多任务操作"
+      ],
+      "install_cmd": "",
+      "usage": "在 Claude Code 中管理多个终端会话",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 64,
+      "platform": "both",
+      "github_language": "Swift",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:58:10Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 16,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "lark-cli",
+      "name": "Lark CLI",
+      "description": "飞书官方 CLI 工具，200+ 命令覆盖消息、文档、表格等核心业务",
+      "description_en": "Command-line tool for Lark/Feishu",
+      "category": "cli-tool",
+      "github_url": "https://github.com/larksuite/cli",
+      "stars": 5172,
+      "forks": 251,
+      "tags": [
+        "lark",
+        "feishu",
+        "office",
+        "collaboration"
+      ],
+      "use_cases": [
+        "飞书集成",
+        "文档操作",
+        "消息发送"
+      ],
+      "install_cmd": "",
+      "usage": "通过命令行与飞书平台交互，操作文档和发送消息",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 59,
+      "platform": "both",
+      "github_language": "Go",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:06:34Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 12,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "description": "智能体技能框架和软件开发方法论，包含 TDD、调试、协作等 20+ 技能",
+      "description_en": "Superpower enhancements for Claude Code",
+      "category": "skill",
+      "github_url": "https://github.com/obra/superpowers",
+      "stars": 126817,
+      "forks": 10337,
+      "tags": [
+        "enhancement",
+        "productivity",
+        "power-user"
+      ],
+      "use_cases": [
+        "功能增强",
+        "效率提升"
+      ],
+      "install_cmd": "",
+      "usage": "为 Claude Code 添加额外的高级功能",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 67,
+      "platform": "claude-code",
+      "github_language": "Shell",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:07:02Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 20,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "oh-my-claude-code",
+      "name": "Oh My Claude Code",
+      "description": "团队优先的多智能体编排框架，零学习成本",
+      "description_en": "Configuration and enhancement framework for Claude Code",
+      "category": "dev-tool",
+      "github_url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
+      "stars": 17923,
+      "forks": 1258,
+      "tags": [
+        "config",
+        "enhancement",
+        "framework",
+        "essential"
+      ],
+      "use_cases": [
+        "配置管理",
+        "插件管理",
+        "环境美化"
+      ],
+      "install_cmd": "",
+      "usage": "提供 Claude Code 的统一配置管理和主题系统",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 65,
+      "platform": "claude-code",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:03:53Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 10
+      }
+    },
+    {
+      "id": "vibevoice",
+      "name": "VibeVoice",
+      "description": "微软开源的前沿语音 AI，支持 TTS 和 ASR，50+ 种语言",
+      "description_en": "Voice coding tool for Claude Code",
+      "category": "voice-tool",
+      "github_url": "https://github.com/microsoft/VibeVoice",
+      "stars": 31924,
+      "forks": 3534,
+      "tags": [
+        "voice",
+        "coding",
+        "accessibility"
+      ],
+      "use_cases": [
+        "语音编程",
+        "无障碍开发"
+      ],
+      "install_cmd": "",
+      "usage": "通过语音输入给 Claude Code 下达编程指令",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 95,
+      "platform": "standalone",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:07:36Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "qwenvoice",
+      "name": "QwenVoice",
+      "description": "阿里通义千问语音合成模型，支持语音克隆和自由设计",
+      "description_en": "Voice interaction tool powered by Qwen",
+      "category": "voice-tool",
+      "github_url": "https://github.com/QwenLM/Qwen3-TTS",
+      "stars": 10155,
+      "forks": 1286,
+      "tags": [
+        "voice",
+        "qwen",
+        "chinese",
+        "interaction"
+      ],
+      "use_cases": [
+        "语音交互",
+        "中文语音输入"
+      ],
+      "install_cmd": "",
+      "usage": "用通义千问语音模型为 Claude Code 添加中文语音交互",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 90,
+      "platform": "standalone",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:06:54Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 25
+      }
+    },
+    {
+      "id": "openclaw",
+      "name": "OpenClaw / OpenCow",
+      "description": "个人 AI 助手，支持 20+ 通信渠道，ClawHub 技能市场 13000+ 技能",
+      "description_en": "Open skill ecosystem and marketplace for Claude Code",
+      "category": "dev-tool",
+      "github_url": "https://github.com/openclaw/openclaw",
+      "stars": 342424,
+      "forks": 67622,
+      "tags": [
+        "ecosystem",
+        "marketplace",
+        "skills",
+        "essential"
+      ],
+      "use_cases": [
+        "技能管理",
+        "技能市场",
+        "社区分享"
+      ],
+      "install_cmd": "",
+      "usage": "Claude Code 的技能生态平台，安装、管理和分享社区技能",
+      "priority": "essential",
+      "source": "user-list",
+      "clawhub_url": "https://clawhub.ai/",
+      "security_rating": "caution",
+      "security_score": 65,
+      "platform": "openclaw",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:06:31Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 20,
+        "仓库健康": 20,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "moneyprinterv2",
+      "name": "MoneyPrinterV2",
+      "description": "自动化在线赚钱流程，支持短视频、社交媒体自动化等",
+      "description_en": "Automate the process of making money online",
+      "category": "ai-agent",
+      "github_url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
+      "stars": 27561,
+      "forks": 2914,
+      "tags": [
+        "video",
+        "content",
+        "automation",
+        "media"
+      ],
+      "use_cases": [
+        "短视频生成",
+        "内容创作"
+      ],
+      "install_cmd": "",
+      "usage": "自动化生成短视频内容",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 85,
+      "platform": "standalone",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:05:10Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "qwencode",
+      "name": "QwenCode",
+      "description": "阿里通义千问终端编程智能体，类似 Claude Code",
+      "description_en": "Coding assistant powered by Qwen",
+      "category": "dev-tool",
+      "github_url": "https://github.com/QwenLM/qwen-code",
+      "stars": 21390,
+      "forks": 1932,
+      "tags": [
+        "coding",
+        "qwen",
+        "assistant",
+        "chinese"
+      ],
+      "use_cases": [
+        "代码生成",
+        "编程辅助"
+      ],
+      "install_cmd": "",
+      "usage": "利用通义千问模型辅助编程",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 63,
+      "platform": "standalone",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:03:26Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 20,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "last30days-skill",
+      "name": "Last 30 Days Skill",
+      "description": "AI 研究技能，跨 Reddit/X/YouTube/HN/Polymarket 等 10+ 平台搜索过去 30 天的热门话题并生成带引用的综合报告",
+      "description_en": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "category": "skill",
+      "github_url": "https://github.com/mvanhorn/last30days-skill",
+      "stars": 16636,
+      "forks": 1321,
+      "tags": [
+        "research",
+        "social-media",
+        "trending",
+        "reddit",
+        "youtube",
+        "hackernews",
+        "polymarket",
+        "web-search"
+      ],
+      "use_cases": [
+        "话题调研",
+        "趋势分析",
+        "竞品监测",
+        "社交媒体情报",
+        "市场预测"
+      ],
+      "install_cmd": "git clone https://github.com/mvanhorn/last30days-skill.git ~/.claude/skills/last30days",
+      "usage": "/last30days [topic] — 研究任意话题，跨平台搜索过去 30 天内容并生成综合报告",
+      "priority": "recommended",
+      "source": "github",
+      "clawhub_url": "https://clawhub.ai/skills/last30days",
+      "security_rating": "caution",
+      "security_score": 62,
+      "platform": "claude-code",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:06:18Z",
+      "security_dimensions": {
+        "来源信任": 18,
+        "社区信任": 20,
+        "仓库健康": 14,
+        "代码安全": 10
+      }
+    },
+    {
+      "id": "claude-code-game-studios",
+      "name": "Claude Code Game Studios",
+      "description": "48 个 AI 智能体 + 36 个工作流技能，模拟真实游戏工作室层级",
+      "description_en": "Game development skills for Claude Code",
+      "category": "skill",
+      "github_url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "stars": 7576,
+      "forks": 1104,
+      "tags": [
+        "game",
+        "development",
+        "creative"
+      ],
+      "use_cases": [
+        "游戏开发",
+        "创意编程"
+      ],
+      "install_cmd": "",
+      "usage": "为 Claude Code 提供游戏开发相关的专业技能",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 79,
+      "platform": "claude-code",
+      "github_language": "Shell",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:06:20Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 12,
+        "仓库健康": 22,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "git-shit-done",
+      "name": "Git Shit Done",
+      "description": "轻量级元提示和规范驱动开发系统，让 Agent 长时间自主工作",
+      "description_en": "Efficient Git workflow tool",
+      "category": "dev-tool",
+      "github_url": "https://github.com/gsd-build/get-shit-done",
+      "stars": 45601,
+      "forks": 3673,
+      "tags": [
+        "git",
+        "workflow",
+        "productivity"
+      ],
+      "use_cases": [
+        "Git 流程优化",
+        "快速提交"
+      ],
+      "install_cmd": "",
+      "usage": "优化 Claude Code 中的 Git 操作流程",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 95,
+      "platform": "claude-code",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:05:47Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "mini-max-skills",
+      "name": "MiniMax Skills",
+      "description": "MiniMax 官方 AI 开发技能集，覆盖前端、全栈、移动端、Shader 及文档生成",
+      "description_en": "Development skills for AI coding agents by MiniMax - frontend, fullstack, mobile, shader & doc generation",
+      "category": "skill",
+      "github_url": "https://github.com/MiniMax-AI/skills",
+      "stars": 8186,
+      "forks": 621,
+      "tags": [
+        "skills",
+        "collection",
+        "enhancement"
+      ],
+      "use_cases": [
+        "技能扩展",
+        "功能增强"
+      ],
+      "install_cmd": "",
+      "usage": "安装 Mini-Max 提供的各种实用技能",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "danger",
+      "security_score": 40,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "mirofish",
+      "name": "MiroFish",
+      "description": "群体智能预测引擎，模拟数千 AI 智能体预测事件走向",
+      "description_en": "AI assistance tool",
+      "category": "ai-agent",
+      "github_url": "https://github.com/666ghj/MiroFish",
+      "stars": 46567,
+      "forks": 6619,
+      "tags": [
+        "ai",
+        "assistant"
+      ],
+      "use_cases": [
+        "AI 辅助"
+      ],
+      "install_cmd": "",
+      "usage": "",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 80,
+      "platform": "standalone",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:05:06Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 25
+      }
+    },
+    {
+      "id": "agency-agents",
+      "name": "Agency Agents",
+      "description": "完整的 AI 代理公司，每个智能体都有个性、流程和交付物",
+      "description_en": "AI agent agency framework",
+      "category": "ai-agent",
+      "github_url": "https://github.com/msitarzewski/agency-agents",
+      "stars": 66916,
+      "forks": 10115,
+      "tags": [
+        "agent",
+        "framework",
+        "multi-agent"
+      ],
+      "use_cases": [
+        "多智能体协作",
+        "代理框架"
+      ],
+      "install_cmd": "",
+      "usage": "多个 AI 智能体协作完成复杂任务",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 67,
+      "platform": "both",
+      "github_language": "Shell",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:06:05Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 20,
+        "仓库健康": 22,
+        "代码安全": 10
+      }
+    },
+    {
+      "id": "project-nomad",
+      "name": "Project Nomad",
+      "description": "自包含离线生存计算机，集成关键工具、知识库和 AI，随时随地可用",
+      "description_en": "Self-contained, offline survival computer with critical tools, knowledge, and AI",
+      "category": "ai-agent",
+      "github_url": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "stars": 20422,
+      "forks": 1936,
+      "tags": [
+        "project-management",
+        "agent",
+        "workflow"
+      ],
+      "use_cases": [
+        "项目管理",
+        "任务规划"
+      ],
+      "install_cmd": "",
+      "usage": "用 AI 智能体辅助项目管理和任务分配",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "caution",
+      "security_score": 55,
+      "platform": "standalone",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:04:54Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "clawith",
+      "name": "Clawith (OpenClaw for Teams)",
+      "description": "OpenClaw 团队版，多智能体协作平台，每个 Agent 有持久身份和记忆",
+      "description_en": "Team version of OpenClaw for collaborative skill sharing",
+      "category": "dev-tool",
+      "github_url": "https://github.com/dataelement/Clawith",
+      "stars": 2636,
+      "forks": 405,
+      "tags": [
+        "team",
+        "collaboration",
+        "skills",
+        "sharing"
+      ],
+      "use_cases": [
+        "团队协作",
+        "技能共享",
+        "企业级管理"
+      ],
+      "install_cmd": "",
+      "usage": "团队版 OpenClaw，支持技能共享和协作管理",
+      "priority": "normal",
+      "source": "user-list",
+      "security_rating": "danger",
+      "security_score": 54,
+      "platform": "openclaw",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:52:40Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 12,
+        "仓库健康": 22,
+        "代码安全": 5
+      }
+    },
+    {
+      "id": "free-ride",
+      "name": "Free Ride",
+      "description": "管理 OpenRouter 免费 AI 模型，自动按质量排名，配置限流回退",
+      "description_en": "Free tier optimization for Claude Code",
+      "category": "productivity",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "cost",
+        "optimization",
+        "free"
+      ],
+      "use_cases": [
+        "成本优化",
+        "额度管理"
+      ],
+      "install_cmd": "clawhub install free-ride",
+      "usage": "优化 Claude Code 的使用，充分利用免费额度",
+      "priority": "normal",
+      "source": "user-list",
+      "clawhub_url": "https://clawhub.ai/skills/free-ride",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "auto-updater",
+      "name": "Auto Updater",
+      "description": "自动更新技能和工具到最新版本",
+      "description_en": "Auto-update skills and tools to latest version",
+      "category": "skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "update",
+        "automation",
+        "maintenance"
+      ],
+      "use_cases": [
+        "自动更新",
+        "版本管理"
+      ],
+      "install_cmd": "clawhub install auto-updater",
+      "usage": "自动检测并更新已安装的技能到最新版本",
+      "priority": "normal",
+      "source": "user-list",
+      "clawhub_url": "https://clawhub.ai/skills/auto-updater",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "both",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "podcast-reader",
+      "name": "Podcast Reader",
+      "description": "播客内容转结构化笔记，提取播客中的关键信息",
+      "description_en": "Convert podcast content into structured notes",
+      "category": "openclaw-skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "podcast",
+        "content",
+        "notes",
+        "media"
+      ],
+      "use_cases": [
+        "播客解析",
+        "内容提取",
+        "笔记生成"
+      ],
+      "install_cmd": "clawhub install podcast-reader",
+      "usage": "输入播客链接，自动生成结构化的学习笔记",
+      "priority": "recommended",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/skills/podcast-reader",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "github-to-skills",
+      "name": "GitHub to Skills",
+      "description": "将 GitHub 项目转为 Claude Code 可调用的 Skill",
+      "description_en": "Convert GitHub repos into callable Claude Code skills",
+      "category": "openclaw-skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "github",
+        "skills",
+        "conversion",
+        "essential"
+      ],
+      "use_cases": [
+        "技能转换",
+        "GitHub 集成"
+      ],
+      "install_cmd": "clawhub install github-to-skills",
+      "usage": "将任意 GitHub 项目转化为 Claude Code 可直接调用的 Skill",
+      "priority": "essential",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/skills/github-to-skills",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "skill-manager",
+      "name": "Skill Manager",
+      "description": "Skill 统一管理、安装、更新工具",
+      "description_en": "Unified skill management, installation, and updates",
+      "category": "openclaw-skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "skills",
+        "management",
+        "install",
+        "essential"
+      ],
+      "use_cases": [
+        "技能管理",
+        "批量安装",
+        "版本更新"
+      ],
+      "install_cmd": "clawhub install skill-manager",
+      "usage": "统一管理所有已安装的 Claude Code 技能",
+      "priority": "essential",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/skills/skill-manager",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "skill-evolution-manager",
+      "name": "Skill Evolution Manager",
+      "description": "Skill 自动迭代、优化升级管理器",
+      "description_en": "Automatic skill iteration and optimization manager",
+      "category": "openclaw-skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "skills",
+        "evolution",
+        "optimization"
+      ],
+      "use_cases": [
+        "技能优化",
+        "自动迭代"
+      ],
+      "install_cmd": "clawhub install skill-evolution-manager",
+      "usage": "自动分析和优化已安装技能的性能和效果",
+      "priority": "recommended",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/skills/skill-evolution-manager",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "mcp-builder",
+      "name": "MCP Builder",
+      "description": "MCP 服务器快速构建工具",
+      "description_en": "Quick MCP server builder",
+      "category": "openclaw-skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "mcp",
+        "builder",
+        "server",
+        "dev-tool"
+      ],
+      "use_cases": [
+        "MCP 开发",
+        "服务器构建"
+      ],
+      "install_cmd": "clawhub install mcp-builder",
+      "usage": "快速搭建自定义 MCP 服务器",
+      "priority": "recommended",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/skills/mcp-builder",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "pptx-skill",
+      "name": "PPTX Skill",
+      "description": "PPT 文件内容处理与生成",
+      "description_en": "PowerPoint file processing and generation",
+      "category": "openclaw-skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "pptx",
+        "presentation",
+        "office",
+        "content"
+      ],
+      "use_cases": [
+        "PPT 生成",
+        "演示文稿处理"
+      ],
+      "install_cmd": "clawhub install pptx",
+      "usage": "用 Claude Code 生成和编辑 PowerPoint 演示文稿",
+      "priority": "normal",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/skills/pptx",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "video-transcribe",
+      "name": "Video Transcribe",
+      "description": "视频/音频自动转文字",
+      "description_en": "Auto transcription for video and audio",
+      "category": "openclaw-skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "video",
+        "audio",
+        "transcription",
+        "media"
+      ],
+      "use_cases": [
+        "语音转文字",
+        "视频字幕",
+        "内容提取"
+      ],
+      "install_cmd": "clawhub install video-transcribe",
+      "usage": "自动将视频和音频内容转写为文字",
+      "priority": "recommended",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/skills/video-transcribe",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "json-canvas",
+      "name": "JSON Canvas",
+      "description": "JSON Canvas 画布文件编辑工具",
+      "description_en": "JSON Canvas file editor",
+      "category": "openclaw-skill",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "canvas",
+        "json",
+        "visual",
+        "obsidian"
+      ],
+      "use_cases": [
+        "画布编辑",
+        "可视化布局"
+      ],
+      "install_cmd": "clawhub install json-canvas",
+      "usage": "创建和编辑 JSON Canvas 格式的画布文件",
+      "priority": "normal",
+      "source": "openclaw",
+      "clawhub_url": "https://clawhub.ai/skills/json-canvas",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "alert-system",
+      "name": "Alert System",
+      "description": "智能提醒系统，金融投资场景的价格和事件告警",
+      "description_en": "Smart alert system for price and event notifications",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "alert",
+        "notification",
+        "finance",
+        "monitoring"
+      ],
+      "use_cases": [
+        "价格告警",
+        "事件提醒",
+        "投资监控"
+      ],
+      "install_cmd": "clawhub install alert-system",
+      "usage": "设置价格/事件告警条件，自动推送通知",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/alert-system",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "backtest-engine",
+      "name": "Backtest Engine",
+      "description": "策略回测引擎，测试交易策略的历史表现",
+      "description_en": "Strategy backtesting engine",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "backtest",
+        "trading",
+        "strategy",
+        "finance"
+      ],
+      "use_cases": [
+        "策略回测",
+        "历史分析",
+        "量化验证"
+      ],
+      "install_cmd": "clawhub install backtest-engine",
+      "usage": "编写交易策略后进行历史数据回测验证",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/backtest-engine",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "china-stock-analysis",
+      "name": "China Stock Analysis",
+      "description": "A 股分析工具，支持中国特色的股票分析指标",
+      "description_en": "Chinese A-share stock analysis",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "stock",
+        "china",
+        "a-share",
+        "finance",
+        "analysis"
+      ],
+      "use_cases": [
+        "A 股分析",
+        "中国市场研究"
+      ],
+      "install_cmd": "clawhub install china-stock-analysis",
+      "usage": "分析 A 股市场数据和个股表现",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/china-stock-analysis",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "crypto-analysis",
+      "name": "Crypto Analysis",
+      "description": "加密货币分析工具",
+      "description_en": "Cryptocurrency analysis tool",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "crypto",
+        "blockchain",
+        "finance",
+        "analysis"
+      ],
+      "use_cases": [
+        "加密货币分析",
+        "链上数据"
+      ],
+      "install_cmd": "clawhub install crypto-analysis",
+      "usage": "分析加密货币市场数据和趋势",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/crypto-analysis",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "data-analysis",
+      "name": "Data Analysis",
+      "description": "通用数据分析技能",
+      "description_en": "General data analysis skill",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "data",
+        "analysis",
+        "statistics"
+      ],
+      "use_cases": [
+        "数据分析",
+        "统计计算"
+      ],
+      "install_cmd": "clawhub install data-analysis",
+      "usage": "进行各类数据分析和统计计算",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/data-analysis",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "data-visualization",
+      "name": "Data Visualization",
+      "description": "数据可视化技能，生成图表和仪表板",
+      "description_en": "Data visualization for charts and dashboards",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "visualization",
+        "charts",
+        "dashboard",
+        "data"
+      ],
+      "use_cases": [
+        "图表生成",
+        "数据展示",
+        "仪表板"
+      ],
+      "install_cmd": "clawhub install data-visualization",
+      "usage": "生成各类数据可视化图表",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/data-visualization",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "finnhub-pro",
+      "name": "Finnhub Pro",
+      "description": "Finnhub 金融数据接口",
+      "description_en": "Finnhub financial data integration",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "finnhub",
+        "finance",
+        "data",
+        "api"
+      ],
+      "use_cases": [
+        "实时行情",
+        "财务数据",
+        "市场数据"
+      ],
+      "install_cmd": "clawhub install finnhub-pro",
+      "usage": "接入 Finnhub 获取实时金融市场数据",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/finnhub-pro",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "tushare-finance",
+      "name": "Tushare Finance",
+      "description": "Tushare 中国金融数据接口，支持 220+ 接口覆盖 A 股/港股/美股/基金/期货",
+      "description_en": "Tushare Chinese financial data integration",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "tushare",
+        "finance",
+        "china",
+        "data",
+        "api"
+      ],
+      "use_cases": [
+        "A 股数据",
+        "中国市场数据"
+      ],
+      "install_cmd": "clawhub install tushare-finance",
+      "usage": "接入 Tushare 获取中国金融市场数据",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/StanleyChanH/tushare-finance",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "us-stock-analysis",
+      "name": "US Stock Analysis",
+      "description": "美股分析工具",
+      "description_en": "US stock market analysis",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "stock",
+        "us-market",
+        "finance",
+        "analysis"
+      ],
+      "use_cases": [
+        "美股分析",
+        "美国市场研究"
+      ],
+      "install_cmd": "clawhub install us-stock-analysis",
+      "usage": "分析美国股票市场数据",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/us-stock-analysis",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "us-value-investing",
+      "name": "US Value Investing Framework",
+      "description": "价值投资框架，基于基本面分析的投资决策工具",
+      "description_en": "Value investing framework based on fundamental analysis",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "value-investing",
+        "fundamental",
+        "finance",
+        "framework"
+      ],
+      "use_cases": [
+        "价值投资",
+        "基本面分析"
+      ],
+      "install_cmd": "clawhub install us-value-investing-framework",
+      "usage": "基于价值投资理念进行股票筛选和分析",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/us-value-investing-framework",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "feishu-doc",
+      "name": "Feishu Doc",
+      "description": "飞书文档操作技能，支持读取、写入、更新 Wiki/Docs/Sheets/Bitable",
+      "description_en": "Feishu/Lark document operations",
+      "category": "productivity",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "feishu",
+        "document",
+        "office",
+        "collaboration"
+      ],
+      "use_cases": [
+        "文档操作",
+        "飞书集成"
+      ],
+      "install_cmd": "clawhub install feishu-doc",
+      "usage": "在 Claude Code 中创建和编辑飞书文档",
+      "priority": "normal",
+      "source": "openclaw-office",
+      "clawhub_url": "https://clawhub.ai/skills/feishu-doc",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "feishu-drive",
+      "name": "Feishu Drive",
+      "description": "飞书网盘文件操作",
+      "description_en": "Feishu/Lark drive file operations",
+      "category": "productivity",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "feishu",
+        "drive",
+        "storage",
+        "files"
+      ],
+      "use_cases": [
+        "文件管理",
+        "云存储操作"
+      ],
+      "install_cmd": "clawhub install feishu-drive",
+      "usage": "操作飞书网盘中的文件",
+      "priority": "normal",
+      "source": "openclaw-office",
+      "clawhub_url": "https://clawhub.ai/skills/feishu-drive",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "feishu-wiki",
+      "name": "Feishu Wiki",
+      "description": "飞书知识库操作，导航和管理 Wiki 页面、空间、节点",
+      "description_en": "Feishu/Lark knowledge base operations",
+      "category": "productivity",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "feishu",
+        "wiki",
+        "knowledge-base"
+      ],
+      "use_cases": [
+        "知识库管理",
+        "Wiki 操作"
+      ],
+      "install_cmd": "clawhub install feishu-wiki",
+      "usage": "在 Claude Code 中管理飞书知识库内容",
+      "priority": "normal",
+      "source": "openclaw-office",
+      "clawhub_url": "https://clawhub.ai/skills/feishu-wiki",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "healthcheck",
+      "name": "Healthcheck",
+      "description": "安全审计和健康检查工具",
+      "description_en": "Security audit and health check tool",
+      "category": "dev-tool",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "security",
+        "audit",
+        "health",
+        "monitoring"
+      ],
+      "use_cases": [
+        "安全审计",
+        "系统健康检查"
+      ],
+      "install_cmd": "clawhub install healthcheck",
+      "usage": "对项目进行安全审计和健康状态检查",
+      "priority": "recommended",
+      "source": "openclaw-system",
+      "clawhub_url": "https://clawhub.ai/skills/healthcheck",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "humanizer-zh",
+      "name": "Humanizer ZH",
+      "description": "AI 文本人性化工具，扫描 29 种 AI 写作模式并提供修改建议",
+      "description_en": "Chinese text humanizer - make AI text more natural",
+      "category": "productivity",
+      "github_url": "https://github.com/brandonwise/humanizer",
+      "stars": 33,
+      "forks": 4,
+      "tags": [
+        "chinese",
+        "writing",
+        "humanize",
+        "text"
+      ],
+      "use_cases": [
+        "中文润色",
+        "文本优化"
+      ],
+      "install_cmd": "clawhub install humanizer",
+      "usage": "对 AI 生成的中文进行润色，使其更自然流畅",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/biostartechnology/humanizer",
+      "security_rating": "caution",
+      "security_score": 69,
+      "platform": "openclaw",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T02:29:43Z",
+      "security_dimensions": {
+        "来源信任": 18,
+        "社区信任": 3,
+        "仓库健康": 18,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "jina-reader",
+      "name": "Jina Reader",
+      "description": "Jina AI 网页内容提取 API，将 URL 转为 LLM 友好的文本",
+      "description_en": "Web content extraction via Jina Reader API",
+      "category": "mcp-server",
+      "github_url": "https://github.com/jina-ai/reader",
+      "stars": 10442,
+      "forks": 789,
+      "tags": [
+        "web",
+        "reader",
+        "content",
+        "extraction"
+      ],
+      "use_cases": [
+        "网页提取",
+        "内容解析"
+      ],
+      "install_cmd": "",
+      "usage": "将网页内容提取为干净的文本/Markdown 格式",
+      "priority": "recommended",
+      "source": "openclaw-finance",
+      "security_rating": "caution",
+      "security_score": 74,
+      "platform": "both",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:32:02Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 16,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "quant-factor-screener",
+      "name": "Quant Factor Screener",
+      "description": "量化因子选股工具",
+      "description_en": "Quantitative factor-based stock screener",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "quant",
+        "factor",
+        "screening",
+        "finance"
+      ],
+      "use_cases": [
+        "量化选股",
+        "因子分析"
+      ],
+      "install_cmd": "clawhub install quant-factor-screener",
+      "usage": "基于量化因子模型筛选股票",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/quant-factor-screener",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "stock-portfolio-manager",
+      "name": "Stock Portfolio Manager",
+      "description": "股票组合管理工具",
+      "description_en": "Stock portfolio management tool",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "portfolio",
+        "stock",
+        "management",
+        "finance"
+      ],
+      "use_cases": [
+        "组合管理",
+        "资产配置"
+      ],
+      "install_cmd": "clawhub install stock-portfolio-manager",
+      "usage": "管理和优化股票投资组合",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/stock-portfolio-manager",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "trading-coach",
+      "name": "Trading Coach",
+      "description": "AI 交易教练，提供交易指导和复盘",
+      "description_en": "AI trading coach for guidance and review",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "trading",
+        "coaching",
+        "education",
+        "finance"
+      ],
+      "use_cases": [
+        "交易指导",
+        "交易复盘",
+        "策略优化"
+      ],
+      "install_cmd": "clawhub install trading-coach",
+      "usage": "AI 驱动的交易指导和复盘分析",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/trading-coach",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "news-aggregator",
+      "name": "News Aggregator",
+      "description": "新闻聚合工具，收集多来源财经新闻",
+      "description_en": "Multi-source news aggregation tool",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "news",
+        "aggregation",
+        "finance",
+        "media"
+      ],
+      "use_cases": [
+        "新闻聚合",
+        "信息收集"
+      ],
+      "install_cmd": "clawhub install news-aggregator",
+      "usage": "聚合多个来源的财经新闻",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/news-aggregator",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "risk-management",
+      "name": "Risk Management",
+      "description": "风险管理工具，评估投资风险",
+      "description_en": "Risk assessment and management tool",
+      "category": "finance",
+      "github_url": "",
+      "stars": 0,
+      "forks": 0,
+      "tags": [
+        "risk",
+        "management",
+        "finance",
+        "assessment"
+      ],
+      "use_cases": [
+        "风险评估",
+        "仓位管理"
+      ],
+      "install_cmd": "clawhub install risk-management",
+      "usage": "评估和管理投资组合的风险暴露",
+      "priority": "normal",
+      "source": "openclaw-finance",
+      "clawhub_url": "https://clawhub.ai/skills/risk-management",
+      "security_rating": "danger",
+      "security_score": 35,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 10,
+        "社区信任": 0,
+        "仓库健康": 10,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "tradingagents-tauric",
+      "name": "TradingAgents (TauricResearch)",
+      "description": "多智能体 LLM 金融交易框架，模拟真实交易公司动态",
+      "description_en": "Multi-agent LLM financial trading framework",
+      "category": "finance",
+      "github_url": "https://github.com/TauricResearch/TradingAgents",
+      "stars": 44840,
+      "forks": 8111,
+      "tags": [
+        "trading",
+        "finance",
+        "multi-agent",
+        "llm"
+      ],
+      "use_cases": [
+        "交易分析",
+        "多模型协作",
+        "市场研究"
+      ],
+      "install_cmd": "",
+      "usage": "部署多个专业 LLM 智能体（基本面分析师、情绪分析师、技术分析师）协作交易",
+      "priority": "recommended",
+      "source": "user-list",
+      "security_rating": "verified",
+      "security_score": 95,
+      "platform": "standalone",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:07:42Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "firecrawl-mcp",
+      "name": "Firecrawl MCP Server",
+      "description": "Firecrawl 官方 MCP 服务器，为 Claude Code 提供网页抓取能力",
+      "description_en": "Official Firecrawl MCP Server for web scraping",
+      "category": "mcp-server",
+      "github_url": "https://github.com/mendableai/firecrawl-mcp-server",
+      "stars": 5911,
+      "forks": 665,
+      "tags": [
+        "scraping",
+        "mcp",
+        "firecrawl",
+        "essential"
+      ],
+      "use_cases": [
+        "网页抓取",
+        "数据提取"
+      ],
+      "install_cmd": "",
+      "usage": "通过 MCP 协议接入 Claude Code，调用 Firecrawl 抓取和搜索能力",
+      "priority": "recommended",
+      "source": "search",
+      "security_rating": "caution",
+      "security_score": 59,
+      "platform": "both",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T07:39:52Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 12,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "awesome-claude-code",
+      "name": "Awesome Claude Code",
+      "description": "Claude Code 精选资源列表，收集技能、钩子、命令、插件等",
+      "description_en": "Curated awesome list for Claude Code skills, hooks, and plugins",
+      "category": "dev-tool",
+      "github_url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "stars": 34745,
+      "forks": 2528,
+      "tags": [
+        "awesome-list",
+        "reference",
+        "skills",
+        "essential"
+      ],
+      "use_cases": [
+        "学习参考",
+        "资源发现",
+        "工具索引"
+      ],
+      "install_cmd": "",
+      "usage": "作为 Claude Code 生态系统的资源索引和参考手册",
+      "priority": "essential",
+      "source": "search",
+      "security_rating": "caution",
+      "security_score": 61,
+      "platform": "claude-code",
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:07:42Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 18,
+        "代码安全": 10
+      }
+    },
+    {
+      "id": "lark-openapi-mcp",
+      "name": "Lark OpenAPI MCP",
+      "description": "飞书/Lark 官方 OpenAPI MCP 服务器",
+      "description_en": "Official Feishu/Lark OpenAPI MCP server",
+      "category": "mcp-server",
+      "github_url": "https://github.com/larksuite/lark-openapi-mcp",
+      "stars": 622,
+      "forks": 85,
+      "tags": [
+        "feishu",
+        "lark",
+        "mcp",
+        "office"
+      ],
+      "use_cases": [
+        "飞书集成",
+        "文档操作",
+        "消息发送"
+      ],
+      "install_cmd": "",
+      "usage": "通过 MCP 让 Claude Code 直接操作飞书平台",
+      "priority": "recommended",
+      "source": "search",
+      "security_rating": "caution",
+      "security_score": 61,
+      "platform": "both",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T03:09:32Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 7,
+        "仓库健康": 14,
+        "代码安全": 15
+      }
+    },
+    {
+      "id": "awesome-openclaw-skills",
+      "name": "Awesome OpenClaw Skills",
+      "description": "OpenClaw 技能精选集，5400+ 技能筛选和分类",
+      "description_en": "Curated collection of 5400+ OpenClaw skills",
+      "category": "dev-tool",
+      "github_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+      "stars": 43310,
+      "forks": 4127,
+      "tags": [
+        "openclaw",
+        "skills",
+        "awesome-list",
+        "reference"
+      ],
+      "use_cases": [
+        "技能发现",
+        "资源索引"
+      ],
+      "install_cmd": "",
+      "usage": "查找和发现 OpenClaw 生态中的优质技能",
+      "priority": "recommended",
+      "source": "search",
+      "security_rating": "caution",
+      "security_score": 65,
+      "platform": "openclaw",
+      "github_language": null,
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:03:14Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 10
+      }
+    },
+    {
+      "id": "rtk",
+      "name": "RTK",
+      "description": "CLI 代理，减少 LLM Token 消耗 60-90%，Rust 单二进制零依赖",
+      "description_en": "CLI proxy that reduces LLM token consumption by 60-90%",
+      "category": "cli-tool",
+      "github_url": "https://github.com/rtk-ai/rtk",
+      "stars": 15890,
+      "forks": 803,
+      "tags": [
+        "token",
+        "optimization",
+        "cli",
+        "rust",
+        "productivity"
+      ],
+      "use_cases": [
+        "Token 优化",
+        "成本控制"
+      ],
+      "install_cmd": "",
+      "usage": "作为 CLI 代理层减少 Claude Code 的 Token 消耗",
+      "priority": "recommended",
+      "source": "search",
+      "security_rating": "caution",
+      "security_score": 65,
+      "platform": "both",
+      "github_language": "Rust",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:06:34Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "clawsec",
+      "name": "ClawSec",
+      "description": "OpenClaw 完整安全套件：漂移检测、实时安全建议、自动审计、技能完整性验证",
+      "description_en": "Complete security skill suite for OpenClaw agents",
+      "category": "dev-tool",
+      "github_url": "https://github.com/prompt-security/clawsec",
+      "clawhub_url": "",
+      "stars": 862,
+      "forks": 90,
+      "tags": [
+        "security",
+        "audit",
+        "openclaw",
+        "essential"
+      ],
+      "use_cases": [
+        "安全审计",
+        "技能验证",
+        "漂移检测"
+      ],
+      "install_cmd": "",
+      "usage": "保护 SOUL.md 等配置文件，防止恶意技能篡改",
+      "priority": "essential",
+      "source": "search",
+      "security_rating": "trusted",
+      "security_notes": "Prompt Security 公司出品，专业安全套件",
+      "security_score": 95,
+      "platform": "openclaw",
+      "github_language": "JavaScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:15:18Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 7,
+        "仓库健康": 25,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "clawhub",
+      "name": "ClawHub",
+      "description": "OpenClaw 官方技能市场，13000+ 社区技能，向量搜索，版本管理，VirusTotal 安全扫描",
+      "description_en": "Official skill registry and marketplace for OpenClaw",
+      "category": "dev-tool",
+      "github_url": "https://github.com/openclaw/clawhub",
+      "clawhub_url": "https://clawhub.ai/",
+      "stars": 7217,
+      "forks": 1138,
+      "tags": [
+        "marketplace",
+        "skills",
+        "registry",
+        "openclaw",
+        "essential"
+      ],
+      "use_cases": [
+        "技能发现",
+        "技能安装",
+        "技能发布"
+      ],
+      "install_cmd": "npm i -g clawhub",
+      "usage": "搜索、安装、发布 OpenClaw 技能的官方平台",
+      "priority": "essential",
+      "source": "search",
+      "security_rating": "verified",
+      "security_score": 87,
+      "platform": "openclaw",
+      "github_language": "TypeScript",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:32:15Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 12,
+        "仓库健康": 20,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "gws-cli",
+      "name": "Google Workspace CLI (gws)",
+      "description": "Google Workspace 全能 CLI，覆盖 Drive/Gmail/Calendar 等全部 API，支持 AI Agent 集成",
+      "description_en": "One CLI for all of Google Workspace — built for humans and AI agents",
+      "category": "cli-tool",
+      "github_url": "https://github.com/googleworkspace/cli",
+      "clawhub_url": "https://clawhub.ai/steipete/gog",
+      "stars": 23271,
+      "forks": 1138,
+      "tags": [
+        "google",
+        "workspace",
+        "cli",
+        "gmail",
+        "drive",
+        "essential"
+      ],
+      "use_cases": [
+        "Gmail 操作",
+        "日历管理",
+        "云盘管理",
+        "文档操作"
+      ],
+      "install_cmd": "npm i -g @nickel-org/gws",
+      "usage": "安装后通过 gog 命令操作 Google Workspace 全部服务",
+      "priority": "essential",
+      "source": "user-provided",
+      "security_rating": "caution",
+      "security_score": 65,
+      "platform": "both",
+      "github_language": "Rust",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T08:57:22Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 18,
+        "仓库健康": 22,
+        "代码安全": 0
+      }
+    },
+    {
+      "id": "bitdefender-ai-skills-checker",
+      "name": "Bitdefender AI Skills Checker",
+      "description": "免费在线 AI 技能安全检查器，AI 驱动分析技能文件，检测后门/数据外传/prompt injection",
+      "description_en": "Free AI-powered security checker for OpenClaw skills",
+      "category": "dev-tool",
+      "github_url": "",
+      "clawhub_url": "",
+      "website_url": "https://www.bitdefender.com/en-us/consumer/ai-skills-checker",
+      "stars": 0,
+      "tags": [
+        "security",
+        "audit",
+        "scanning",
+        "free",
+        "essential"
+      ],
+      "use_cases": [
+        "安装前扫描",
+        "恶意代码检测",
+        "prompt injection 检测"
+      ],
+      "install_cmd": "",
+      "usage": "上传技能文件到网页即可获得安全分析报告",
+      "priority": "essential",
+      "source": "search",
+      "security_rating": "trusted",
+      "security_notes": "Bitdefender 官方出品，可信赖的第三方安全工具",
+      "security_score": 95,
+      "platform": "openclaw",
+      "security_dimensions": {
+        "来源信任": 0,
+        "社区信任": 0,
+        "仓库健康": 25,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "skill-security-auditor",
+      "name": "Skill Security Auditor",
+      "description": "ClawHub 技能 CLI 安全分析器，20+ 恶意指标匹配，风险评分 0-100",
+      "description_en": "CLI security analyzer for ClawHub skills with threat intelligence",
+      "category": "dev-tool",
+      "github_url": "https://github.com/openclaw/skills",
+      "clawhub_url": "https://clawhub.ai/skills/skill-security-auditor",
+      "stars": 3628,
+      "tags": [
+        "security",
+        "audit",
+        "cli",
+        "scanning",
+        "essential"
+      ],
+      "use_cases": [
+        "安装前扫描",
+        "威胁检测",
+        "安全审计报告"
+      ],
+      "install_cmd": "npx clawhub install skill-security-auditor",
+      "usage": "使用 analyze-skill.sh 分析技能文件，生成风险评分和修复建议",
+      "priority": "essential",
+      "source": "search",
+      "security_rating": "trusted",
+      "security_notes": "OpenClaw 官方技能库内的安全工具",
+      "security_score": 95,
+      "platform": "openclaw",
+      "forks": 1015,
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T09:07:58Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 12,
+        "仓库健康": 25,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "openclaw-security-monitor",
+      "name": "OpenClaw Security Monitor",
+      "description": "主动安全监控：41 点威胁扫描、48 个修复脚本、Web 仪表板、Telegram 告警",
+      "description_en": "Proactive security monitoring with 41-point threat scanner and remediation",
+      "category": "dev-tool",
+      "github_url": "https://github.com/adibirzu/openclaw-security-monitor",
+      "clawhub_url": "",
+      "stars": 29,
+      "tags": [
+        "security",
+        "monitoring",
+        "runtime",
+        "dashboard",
+        "essential"
+      ],
+      "use_cases": [
+        "运行时监控",
+        "威胁检测",
+        "自动修复",
+        "ClawHavoc 检测"
+      ],
+      "install_cmd": "",
+      "usage": "部署后提供 Web 仪表板，自动扫描已安装技能并检测运行时异常",
+      "priority": "essential",
+      "source": "search",
+      "security_rating": "trusted",
+      "security_notes": "专门针对 ClawHavoc、AMOS 窃取器等已知威胁",
+      "security_score": 95,
+      "platform": "openclaw",
+      "forks": 2,
+      "github_language": "Shell",
+      "github_archived": false,
+      "last_github_update": "2026-03-30T18:49:50Z",
+      "security_dimensions": {
+        "来源信任": 15,
+        "社区信任": 3,
+        "仓库健康": 25,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "snyk-agent-scan",
+      "name": "Snyk Agent Scan",
+      "description": "AI Agent、MCP Server 和技能的安全扫描器，检测 prompt injection 和恶意载荷",
+      "description_en": "Security scanner for AI agents, MCP servers and agent skills",
+      "category": "dev-tool",
+      "github_url": "https://github.com/snyk/agent-scan",
+      "clawhub_url": "",
+      "stars": 2032,
+      "tags": [
+        "security",
+        "scanning",
+        "mcp",
+        "supply-chain",
+        "essential"
+      ],
+      "use_cases": [
+        "供应链安全",
+        "MCP 扫描",
+        "prompt injection 检测"
+      ],
+      "install_cmd": "",
+      "usage": "扫描 MCP Server 和 Agent Skills 的安全性，检测恶意载荷",
+      "priority": "essential",
+      "source": "search",
+      "security_rating": "trusted",
+      "security_notes": "Snyk 官方出品，ToxicSkills 研究的配套工具",
+      "security_score": 95,
+      "platform": "both",
+      "forks": 194,
+      "github_language": "Python",
+      "github_archived": false,
+      "last_github_update": "2026-03-31T06:24:31Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 12,
+        "仓库健康": 25,
+        "代码安全": 30
+      }
+    },
+    {
+      "id": "clawsecure",
+      "name": "ClawSecure",
+      "description": "免费 OpenClaw 安全扫描器，2890+ 智能体已审计，三层审计协议，OWASP ASI 10/10 覆盖",
+      "description_en": "Free OpenClaw security scanner with 3-Layer Audit Protocol",
+      "category": "dev-tool",
+      "github_url": "https://github.com/ClawSecure/clawsecure-openclaw-security",
+      "clawhub_url": "",
+      "stars": 20,
+      "tags": [
+        "security",
+        "audit",
+        "owasp",
+        "free"
+      ],
+      "use_cases": [
+        "全面安全审计",
+        "OWASP 合规检查"
+      ],
+      "install_cmd": "",
+      "usage": "三层审计协议：静态分析 → 行为分析 → 运行时监控",
+      "priority": "recommended",
+      "source": "search",
+      "security_rating": "trusted",
+      "security_notes": "OWASP ASI (Agent Security Index) 标准覆盖",
+      "security_score": 95,
+      "platform": "openclaw",
+      "forks": 1,
+      "github_language": null,
+      "github_archived": false,
+      "last_github_update": "2026-03-30T06:04:54Z",
+      "security_dimensions": {
+        "来源信任": 25,
+        "社区信任": 3,
+        "仓库健康": 25,
+        "代码安全": 30
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Toolkit 工具目录 Schema",
+  "description": "用于校验 tools.json 结构的 JSON Schema",
+  "type": "object",
+  "required": ["meta", "tools"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "description": "目录元数据",
+      "required": ["name", "version", "total_tools", "last_updated"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "目录名称"
+        },
+        "version": {
+          "type": "string",
+          "description": "目录版本号"
+        },
+        "total_tools": {
+          "type": "integer",
+          "description": "工具总数",
+          "minimum": 0
+        },
+        "last_updated": {
+          "type": "string",
+          "description": "最后更新时间（ISO 8601 格式）"
+        },
+        "last_verified": {
+          "type": "string",
+          "description": "最后验证日期"
+        },
+        "description": {
+          "type": "string",
+          "description": "目录描述"
+        },
+        "last_security_audit": {
+          "type": "string",
+          "description": "最后安全审计时间"
+        },
+        "security_audit_mode": {
+          "type": "string",
+          "description": "安全审计模式",
+          "enum": ["quick", "deep"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "tools": {
+      "type": "array",
+      "description": "工具列表",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "category", "tags", "security_rating"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "工具唯一标识",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "description": "工具名称",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "description": "工具描述（中文）"
+          },
+          "description_en": {
+            "type": "string",
+            "description": "工具描述（英文）"
+          },
+          "category": {
+            "type": "string",
+            "description": "工具分类",
+            "enum": [
+              "mcp-server",
+              "skill",
+              "ai-agent",
+              "cli-tool",
+              "browser-tool",
+              "voice-tool",
+              "finance",
+              "productivity",
+              "dev-tool",
+              "openclaw-skill"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "description": "标签列表",
+            "items": {
+              "type": "string"
+            }
+          },
+          "security_rating": {
+            "type": "string",
+            "description": "安全评级",
+            "enum": [
+              "trusted",
+              "verified",
+              "caution",
+              "danger",
+              "unreviewed"
+            ]
+          },
+          "github_url": {
+            "type": "string",
+            "description": "GitHub 仓库地址",
+            "format": "uri"
+          },
+          "clawhub_url": {
+            "type": "string",
+            "description": "ClawHub 技能市场地址",
+            "format": "uri"
+          },
+          "stars": {
+            "type": "integer",
+            "description": "GitHub Star 数量",
+            "minimum": 0
+          },
+          "forks": {
+            "type": "integer",
+            "description": "GitHub Fork 数量",
+            "minimum": 0
+          },
+          "install_cmd": {
+            "type": "string",
+            "description": "安装命令"
+          },
+          "usage": {
+            "type": "string",
+            "description": "使用说明"
+          },
+          "priority": {
+            "type": "string",
+            "description": "推荐优先级",
+            "enum": ["essential", "recommended", "normal", "optional"]
+          },
+          "source": {
+            "type": "string",
+            "description": "工具来源"
+          },
+          "security_score": {
+            "type": "number",
+            "description": "安全评分（0-100）",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "platform": {
+            "type": "string",
+            "description": "支持平台",
+            "enum": ["mac", "windows", "linux", "both", "all", "web", "standalone", "claude-code", "openclaw"]
+          },
+          "use_cases": {
+            "type": "array",
+            "description": "使用场景",
+            "items": {
+              "type": "string"
+            }
+          },
+          "github_language": {
+            "type": ["string", "null"],
+            "description": "GitHub 主要编程语言"
+          },
+          "github_archived": {
+            "type": "boolean",
+            "description": "GitHub 仓库是否已归档"
+          },
+          "last_github_update": {
+            "type": "string",
+            "description": "GitHub 最后更新时间"
+          },
+          "security_dimensions": {
+            "type": "object",
+            "description": "安全评估各维度得分",
+            "properties": {
+              "来源信任": { "type": "number" },
+              "社区信任": { "type": "number" },
+              "仓库健康": { "type": "number" },
+              "代码安全": { "type": "number" }
+            },
+            "additionalProperties": false
+          },
+          "clawhub_downloads": {
+            "type": "integer",
+            "description": "ClawHub 下载量",
+            "minimum": 0
+          },
+          "security_notes": {
+            "type": "string",
+            "description": "安全备注信息"
+          },
+          "website_url": {
+            "type": "string",
+            "description": "官方网站地址",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

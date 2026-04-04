@@ -1,0 +1,64 @@
+[project]
+name = "ai-toolkit"
+version = "0.1.0"
+description = "AI 工具目录库 — 管理 Claude Code Skills、MCP Servers 和 AI Agent 工具"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+    "jsonschema>=4.17.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.11.0",
+]
+
+# ============================================================
+# pytest 配置
+# ============================================================
+[tool.pytest.ini_options]
+testpaths = ["scripts/tests"]
+pythonpath = ["scripts"]
+addopts = "-v --tb=short"
+
+# ============================================================
+# ruff 配置 — lint + format 合一
+# ============================================================
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+src = ["scripts"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle 错误
+    "W",    # pycodestyle 警告
+    "F",    # pyflakes
+    "I",    # isort（import 排序）
+    "UP",   # pyupgrade（Python 版本升级建议）
+    "B",    # flake8-bugbear（常见 bug 模式）
+    "SIM",  # flake8-simplify（可简化代码）
+    "RUF",  # ruff 专有规则
+]
+ignore = [
+    "E501",   # 行长度交给 formatter 处理
+    "SIM108", # 不强制三元表达式
+    "RUF001", # 中文全角字符（字符串） — 中文项目正常
+    "RUF002", # 中文全角字符（docstring） — 中文项目正常
+    "RUF003", # 中文全角字符（注释） — 中文项目正常
+]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/tests/*" = [
+    "E402",   # 测试文件需要 sys.path hack，import 不在顶部是正常的
+    "SIM105", # 测试中 try/except pass 比 contextlib.suppress 更清晰
+    "SIM117", # 测试中嵌套 with 比合并更易读
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["scripts"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
