@@ -86,7 +86,7 @@ ai-toolkit/
 | 工具 | 说明 | Stars | 安全 | 标签 |
 | --- | --- | ---: | :---: | --- |
 | [Agency Agents](https://github.com/msitarzewski/agency-agents) | 完整的 AI 代理公司，每个智能体有个性和交付物 | 66.9k | 🟡 | `agent`, `framework`, `multi-agent` |
-| [DeerFlow 2.0](https://github.com/bytedance/deer-flow) | 字节跳动 SuperAgent 框架，支持沙箱、记忆、子智能体 | 54.7k | 🟡 | `research`, `workflow`, `search` |
+| [DeerFlow](https://github.com/bytedance/deer-flow) | 字节跳动长程 SuperAgent 框架，支持沙箱、记忆、子智能体 | 54.7k | 🟡 | `research`, `workflow`, `search` |
 | [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | 一键生成短视频，自动提取素材、合成配音和字幕 | 54.3k | 🔴 | `video`, `content`, `automation` |
 | [MiroFish](https://github.com/666ghj/MiroFish) | 群体智能预测引擎，模拟数千 AI 智能体预测事件走向 | 46.6k | 🔵 | `ai`, `assistant` |
 | [MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) | 自动化在线赚钱流程，支持短视频、社交媒体自动化 | 27.6k | 🔵 | `video`, `content`, `automation` |
@@ -115,14 +115,14 @@ ai-toolkit/
 | 工具 | 说明 | Stars | 安全 | 标签 |
 | --- | --- | ---: | :---: | --- |
 | [VibeVoice](https://github.com/microsoft/VibeVoice) | 微软开源语音 AI，支持 TTS 和 ASR，50+ 种语言 | 31.9k | 🔵 | `voice`, `coding`, `accessibility` |
-| [QwenVoice](https://github.com/QwenLM/Qwen3-TTS) | 阿里通义千问语音合成，支持语音克隆 | 10.2k | 🔵 | `voice`, `qwen`, `chinese` |
+| [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) | 阿里通义千问开源语音合成，支持流式生成和语音克隆 | 10.2k | 🔵 | `voice`, `qwen`, `chinese` |
 
 ### 金融投资工具
 
 | 工具 | 说明 | Stars | 安全 | 标签 |
 | --- | --- | ---: | :---: | --- |
 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 多智能体 LLM 金融交易框架 | 44.8k | 🔵 | `trading`, `finance`, `multi-agent` |
-| [Trading Agents](https://github.com/wshobson/agents) | 112 个专业 AI 智能体 + 146 个技能 + 79 个工具 | 32.6k | 🔵 | `trading`, `finance`, `stock` |
+| [Agents](https://github.com/wshobson/agents) | 智能自动化和多智能体编排框架 | 32.6k | 🔵 | `trading`, `finance`, `stock` |
 | Alert System | 价格和事件告警系统 | - | 🔴 | `alert`, `notification`, `finance` |
 | Backtest Engine | 策略回测引擎 | - | 🔴 | `backtest`, `trading`, `strategy` |
 | China Stock Analysis | A 股分析工具 | - | 🔴 | `stock`, `china`, `a-share` |
@@ -143,7 +143,7 @@ ai-toolkit/
 
 | 工具 | 说明 | Stars | 安全 | 标签 |
 | --- | --- | ---: | :---: | --- |
-| [Humanizer ZH](https://github.com/brandonwise/humanizer) | AI 文本人性化，扫描 29 种 AI 写作模式 | 33 | 🟡 | `chinese`, `writing`, `humanize` |
+| [Humanizer](https://github.com/brandonwise/humanizer) | AI 文本人性化，检测并消除 AI 写作痕迹 | 33 | 🟡 | `chinese`, `writing`, `humanize` |
 | [Token Optimizer](https://github.com/openclaw-token-optimizer/openclaw-token-optimizer) | Token 优化器，降低 API 成本 | 8 | 🟡 | `optimization`, `token`, `cost` |
 | Free Ride | 管理 OpenRouter 免费 AI 模型 | - | 🔴 | `cost`, `optimization`, `free` |
 | Feishu Doc | 飞书文档操作：Wiki/Docs/Sheets/Bitable | - | 🔴 | `feishu`, `document`, `office` |
@@ -154,9 +154,9 @@ ai-toolkit/
 
 | 工具 | 说明 | Stars | 安全 | 标签 |
 | --- | --- | ---: | :---: | --- |
-| [OpenClaw / OpenCow](https://github.com/openclaw/openclaw) | 个人 AI 助手，ClawHub 技能市场 13000+ 技能 | 342.4k | 🟡 | `ecosystem`, `marketplace`, `skills` |
+| [OpenClaw](https://github.com/openclaw/openclaw) | 个人 AI 助手，任意 OS/平台，ClawHub 13000+ 技能 | 342.4k | 🟡 | `ecosystem`, `marketplace`, `skills` |
 | [Everything Claude Code](https://github.com/affaan-m/everything-claude-code) | Claude Code 性能优化系统 | 122.0k | 🔵 | `claude-code`, `awesome-list`, `reference` |
-| [Git Shit Done](https://github.com/gsd-build/get-shit-done) | 规范驱动开发系统，让 Agent 长时间自主工作 | 45.6k | 🔵 | `git`, `workflow`, `productivity` |
+| [Get Shit Done](https://github.com/gsd-build/get-shit-done) | 轻量级元提示和规范驱动开发系统，让 Agent 长时间自主工作 | 45.6k | 🔵 | `git`, `workflow`, `productivity` |
 | [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills) | OpenClaw 技能精选集，5400+ 技能筛选和分类 | 43.3k | 🟡 | `openclaw`, `skills`, `awesome-list` |
 | [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) | Claude Code 精选资源列表 | 34.7k | 🟡 | `awesome-list`, `reference`, `skills` |
 | [QwenCode](https://github.com/QwenLM/qwen-code) | 阿里通义千问终端编程智能体 | 21.4k | 🟡 | `coding`, `qwen`, `assistant` |
