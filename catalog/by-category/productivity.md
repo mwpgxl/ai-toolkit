@@ -1,12 +1,12 @@
 # 效率/生产力工具
 
-> 共 6 个工具 | 最后更新: 2026-03-31
+> 共 6 个工具 | 最后更新: 2026-04-06
 
 ---
 
-### [Humanizer ZH](https://github.com/brandonwise/humanizer) ⭐ 33
+### [Humanizer](https://github.com/brandonwise/humanizer) ⭐ 40
 
-AI 文本人性化工具，扫描 29 种 AI 写作模式并提供修改建议
+AI 文本人性化工具，检测并消除 AI 写作痕迹，基于维基百科 AI 写作特征清单
 
 | 属性 | 值 |
 | --- | --- |

@@ -1,10 +1,10 @@
 # 命令行工具
 
-> 共 6 个工具 | 最后更新: 2026-03-31
+> 共 7 个工具 | 最后更新: 2026-04-06
 
 ---
 
-### [CLI-Anything](https://github.com/HKUDS/CLI-Anything) ⭐ 25.4k
+### [CLI-Anything](https://github.com/HKUDS/CLI-Anything) ⭐ 28.4k
 
 让所有软件变成 Agent 原生，通过 CLI 使任何应用可被 AI 控制
 
@@ -18,7 +18,7 @@
 
 ---
 
-### [Google Workspace CLI (gws)](https://github.com/googleworkspace/cli) ⭐ 23.3k
+### [Google Workspace CLI (gws)](https://github.com/googleworkspace/cli) ⭐ 23.9k
 
 Google Workspace 全能 CLI，覆盖 Drive/Gmail/Calendar 等全部 API，支持 AI Agent 集成
 
@@ -33,7 +33,7 @@ Google Workspace 全能 CLI，覆盖 Drive/Gmail/Calendar 等全部 API，支持
 
 ---
 
-### [RTK](https://github.com/rtk-ai/rtk) ⭐ 15.9k
+### [RTK](https://github.com/rtk-ai/rtk) ⭐ 18.4k
 
 CLI 代理，减少 LLM Token 消耗 60-90%，Rust 单二进制零依赖
 
@@ -47,7 +47,7 @@ CLI 代理，减少 LLM Token 消耗 60-90%，Rust 单二进制零依赖
 
 ---
 
-### [cmux](https://github.com/manaflow-ai/cmux) ⭐ 11.8k
+### [cmux](https://github.com/manaflow-ai/cmux) ⭐ 12.7k
 
 基于 Ghostty 的 macOS 终端，支持 AI 编程智能体的垂直标签和通知
 
@@ -61,21 +61,18 @@ CLI 代理，减少 LLM Token 消耗 60-90%，Rust 单二进制零依赖
 
 ---
 
-### [ClawX (DeskClaw)](https://github.com/ValueCell-ai/ClawX) ⭐ 5.9k
+### [ccusage](https://github.com/ryoppippi/ccusage) ⭐ 12.4k
 
-OpenClaw 桌面版 GUI，将 CLI 智能体编排转为桌面体验
+Claude Code / Codex CLI 本地用量分析工具
 
 | 属性 | 值 |
 | --- | --- |
 | 分类 | 命令行工具 |
-| 适用场景 | 桌面版增强, 图形界面 |
-| 标签 | `desktop`, `gui`, `enhancement` |
-
-**使用方法:** 提供 Claude Code 的桌面增强功能
+| 标签 | `usage`, `analytics`, `cost`, `cli` |
 
 ---
 
-### [Lark CLI](https://github.com/larksuite/cli) ⭐ 5.2k
+### [Lark CLI](https://github.com/larksuite/cli) ⭐ 6.7k
 
 飞书官方 CLI 工具，200+ 命令覆盖消息、文档、表格等核心业务
 
@@ -86,5 +83,19 @@ OpenClaw 桌面版 GUI，将 CLI 智能体编排转为桌面体验
 | 标签 | `lark`, `feishu`, `office`, `collaboration` |
 
 **使用方法:** 通过命令行与飞书平台交互，操作文档和发送消息
+
+---
+
+### [ClawX (DeskClaw)](https://github.com/ValueCell-ai/ClawX) ⭐ 6.2k
+
+OpenClaw 桌面版 GUI，将 CLI 智能体编排转为桌面体验
+
+| 属性 | 值 |
+| --- | --- |
+| 分类 | 命令行工具 |
+| 适用场景 | 桌面版增强, 图形界面 |
+| 标签 | `desktop`, `gui`, `enhancement` |
+
+**使用方法:** 提供 Claude Code 的桌面增强功能
 
 ---
