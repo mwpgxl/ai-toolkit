@@ -1,10 +1,10 @@
 # 效率/生产力工具
 
-> 共 6 个工具 | 最后更新: 2026-04-06
+> 共 6 个工具 | 最后更新: 2026-04-13
 
 ---
 
-### [Humanizer](https://github.com/brandonwise/humanizer) ⭐ 40
+### [Humanizer](https://github.com/brandonwise/humanizer) ⭐ 45
 
 AI 文本人性化工具，检测并消除 AI 写作痕迹，基于维基百科 AI 写作特征清单
 
@@ -19,7 +19,7 @@ AI 文本人性化工具，检测并消除 AI 写作痕迹，基于维基百科 
 
 ---
 
-### [Token Optimizer](https://github.com/openclaw-token-optimizer/openclaw-token-optimizer) ⭐ 8
+### [Token Optimizer](https://github.com/openclaw-token-optimizer/openclaw-token-optimizer) ⭐ 7
 
 OpenClaw Token 优化器，支持 Prompt 缓存和动态工具加载，降低 API 成本最高 90%
 
