@@ -1,0 +1,5 @@
+- [1Password 凭证获取](feedback_1password.md) — 需要 key 时用 op CLI 自取，不让用户手动找（通用规则已在全局 CLAUDE.md）
+- [1Password 仓库结构](reference_1password_vaults.md) — Claude Code Keys、Personal、团队账号、金融信息
+- [AI Toolkit 工具发现 API](reference_ai_toolkit_api.md) — 需要新工具/Skill/MCP 时先查此 API，优先选 trusted/verified
+- [browser-automation 项目](project_browser_automation.md) — HubStudio + Playwright 自动注册框架，当前对接 Dreamina
+- [自动化框架整理成 Skill](feedback_skill_packaging.md) — 下次扩展时直接输出可分享的 Skill 格式
