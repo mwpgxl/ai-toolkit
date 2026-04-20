@@ -1,10 +1,10 @@
 # 金融投资工具
 
-> 共 17 个工具 | 最后更新: 2026-04-13
+> 共 17 个工具 | 最后更新: 2026-04-20
 
 ---
 
-### [TradingAgents (TauricResearch)](https://github.com/TauricResearch/TradingAgents) ⭐ 49.9k
+### [TradingAgents (TauricResearch)](https://github.com/TauricResearch/TradingAgents) ⭐ 51.8k
 
 多智能体 LLM 金融交易框架，模拟真实交易公司动态
 
@@ -18,7 +18,7 @@
 
 ---
 
-### [Agents](https://github.com/wshobson/agents) ⭐ 33.5k
+### [Agents](https://github.com/wshobson/agents) ⭐ 33.9k
 
 智能自动化和多智能体编排框架，为 Claude Code 提供交易分析能力
 

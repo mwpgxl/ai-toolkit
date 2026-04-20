@@ -1,10 +1,10 @@
 # 命令行工具
 
-> 共 7 个工具 | 最后更新: 2026-04-13
+> 共 7 个工具 | 最后更新: 2026-04-20
 
 ---
 
-### [CLI-Anything](https://github.com/HKUDS/CLI-Anything) ⭐ 30.4k
+### [CLI-Anything](https://github.com/HKUDS/CLI-Anything) ⭐ 31.7k
 
 让所有软件变成 Agent 原生，通过 CLI 使任何应用可被 AI 控制
 
@@ -18,7 +18,7 @@
 
 ---
 
-### [RTK](https://github.com/rtk-ai/rtk) ⭐ 24.7k
+### [RTK](https://github.com/rtk-ai/rtk) ⭐ 30.1k
 
 CLI 代理，减少 LLM Token 消耗 60-90%，Rust 单二进制零依赖
 
@@ -32,7 +32,7 @@ CLI 代理，减少 LLM Token 消耗 60-90%，Rust 单二进制零依赖
 
 ---
 
-### [Google Workspace CLI (gws)](https://github.com/googleworkspace/cli) ⭐ 24.5k
+### [Google Workspace CLI (gws)](https://github.com/googleworkspace/cli) ⭐ 25.1k
 
 Google Workspace 全能 CLI，覆盖 Drive/Gmail/Calendar 等全部 API，支持 AI Agent 集成
 
@@ -47,7 +47,7 @@ Google Workspace 全能 CLI，覆盖 Drive/Gmail/Calendar 等全部 API，支持
 
 ---
 
-### [cmux](https://github.com/manaflow-ai/cmux) ⭐ 13.8k
+### [cmux](https://github.com/manaflow-ai/cmux) ⭐ 14.8k
 
 基于 Ghostty 的 macOS 终端，支持 AI 编程智能体的垂直标签和通知
 
@@ -61,7 +61,7 @@ Google Workspace 全能 CLI，覆盖 Drive/Gmail/Calendar 等全部 API，支持
 
 ---
 
-### [ccusage](https://github.com/ryoppippi/ccusage) ⭐ 12.8k
+### [ccusage](https://github.com/ryoppippi/ccusage) ⭐ 13.1k
 
 Claude Code / Codex CLI 本地用量分析工具
 
@@ -72,7 +72,7 @@ Claude Code / Codex CLI 本地用量分析工具
 
 ---
 
-### [Lark CLI](https://github.com/larksuite/cli) ⭐ 7.5k
+### [Lark CLI](https://github.com/larksuite/cli) ⭐ 8.2k
 
 飞书官方 CLI 工具，200+ 命令覆盖消息、文档、表格等核心业务
 
@@ -86,7 +86,7 @@ Claude Code / Codex CLI 本地用量分析工具
 
 ---
 
-### [ClawX (DeskClaw)](https://github.com/ValueCell-ai/ClawX) ⭐ 6.5k
+### [ClawX (DeskClaw)](https://github.com/ValueCell-ai/ClawX) ⭐ 6.6k
 
 OpenClaw 桌面版 GUI，将 CLI 智能体编排转为桌面体验
 

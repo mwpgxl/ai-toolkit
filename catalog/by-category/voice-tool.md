@@ -1,10 +1,10 @@
 # 语音工具
 
-> 共 2 个工具 | 最后更新: 2026-04-13
+> 共 2 个工具 | 最后更新: 2026-04-20
 
 ---
 
-### [VibeVoice](https://github.com/microsoft/VibeVoice) ⭐ 39.1k
+### [VibeVoice](https://github.com/microsoft/VibeVoice) ⭐ 40.4k
 
 微软开源的前沿语音 AI，支持 TTS 和 ASR，50+ 种语言
 
@@ -18,7 +18,7 @@
 
 ---
 
-### [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) ⭐ 10.6k
+### [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) ⭐ 10.8k
 
 阿里通义千问开源语音合成模型，支持稳定表达、流式生成、语音克隆和自由设计
 
