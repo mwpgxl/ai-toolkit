@@ -1,10 +1,10 @@
 # 浏览器/网页工具
 
-> 共 2 个工具 | 最后更新: 2026-04-20
+> 共 2 个工具 | 最后更新: 2026-04-27
 
 ---
 
-### [Carbonyl](https://github.com/fathyb/carbonyl) ⭐ 18.8k
+### [Carbonyl](https://github.com/fathyb/carbonyl) ⭐ 18.9k
 
 在终端中运行 Chromium 浏览器，支持 CSS、图片、视频等
 
@@ -18,7 +18,7 @@
 
 ---
 
-### [Web Access](https://github.com/eze-is/web-access) ⭐ 5.3k
+### [Web Access](https://github.com/eze-is/web-access) ⭐ 5.7k
 
 Claude Code 完整联网技能：三层通道调度 + 浏览器 CDP + 并行分治
 

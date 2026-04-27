@@ -1,10 +1,10 @@
 # AI 智能体/框架
 
-> 共 6 个工具 | 最后更新: 2026-04-20
+> 共 6 个工具 | 最后更新: 2026-04-27
 
 ---
 
-### [Agency Agents](https://github.com/msitarzewski/agency-agents) ⭐ 83.6k
+### [Agency Agents](https://github.com/msitarzewski/agency-agents) ⭐ 87.5k
 
 完整的 AI 代理公司，每个智能体都有个性、流程和交付物
 
@@ -18,7 +18,7 @@
 
 ---
 
-### [DeerFlow](https://github.com/bytedance/deer-flow) ⭐ 62.8k
+### [DeerFlow](https://github.com/bytedance/deer-flow) ⭐ 63.9k
 
 字节跳动开源的长程 SuperAgent 框架，支持沙箱、记忆、工具、技能和子智能体，处理分钟到小时级任务
 
@@ -32,7 +32,7 @@
 
 ---
 
-### [MiroFish](https://github.com/666ghj/MiroFish) ⭐ 56.3k
+### [MiroFish](https://github.com/666ghj/MiroFish) ⭐ 57.6k
 
 群体智能预测引擎，模拟数千 AI 智能体预测事件走向
 
@@ -44,7 +44,7 @@
 
 ---
 
-### [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) ⭐ 56.0k
+### [MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) ⭐ 56.4k
 
 一键生成短视频，自动提取素材、合成配音和字幕
 
@@ -58,7 +58,7 @@
 
 ---
 
-### [MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) ⭐ 30.1k
+### [MoneyPrinterV2](https://github.com/FujiwaraChoki/MoneyPrinterV2) ⭐ 30.2k
 
 自动化在线赚钱流程，支持短视频、社交媒体自动化等
 
@@ -72,7 +72,7 @@
 
 ---
 
-### [Project Nomad](https://github.com/Crosstalk-Solutions/project-nomad) ⭐ 24.5k
+### [Project Nomad](https://github.com/Crosstalk-Solutions/project-nomad) ⭐ 25.0k
 
 自包含离线生存计算机，集成关键工具、知识库和 AI，随时随地可用
 
